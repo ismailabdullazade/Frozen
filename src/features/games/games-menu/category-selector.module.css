@@ -1,0 +1,23 @@
+.categorySelector :global .placeholder {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.item {
+  align-items: center;
+  display: flex;
+}
+.containerClass {
+  height: 35px !important;
+}
+@media (max-width: 1280px) {
+  .containerClass {
+    width: 192px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .containerClass {
+    height: 42px !important;
+  }
+}

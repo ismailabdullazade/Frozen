@@ -1,0 +1,134 @@
+.card {
+  width: 173px;
+  height: 41px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #1f2946;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+.card.desctop {
+  width: 286px;
+  height: 112px;
+  justify-content: center;
+}
+/* .card.desctop:hover .card_block,
+.card.desctop:hover .card_img {
+    filter: drop-shadow(0px 0px 15px rgba(220, 174, 255, 0.60));
+    transition: .3s;
+} */
+.card_img {
+  padding-left: 20px;
+  width: 30px;
+  height: 100%;
+}
+.card.desctop .card_img {
+  padding-right: 16px;
+}
+.card_block {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.card_block__text {
+  color: #575e7a;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 2px;
+}
+.card.card.desctop .card_block .card_block__text {
+  padding-bottom: 4px;
+}
+.card_block__title {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card.card.desctop .card_block .card_block__title {
+  font-size: 14px;
+}
+.card_arrow {
+  padding-left: 8px;
+}
+.card:hover::before {
+  content: "COMING SOON";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 10.5px rgba(255, 255, 255, 0.25);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 5px;
+  background: rgba(5, 9, 21, 0.9);
+  backdrop-filter: blur(3.299999952316284px);
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+@media (max-width: 1300px) {
+  .card.desctop {
+    width: 176px;
+    height: 41px;
+    justify-content: flex-start;
+  }
+  .card.desctop .card_img {
+    padding: 0 19px 0 16px;
+    width: 23px;
+  }
+  .card.card.desctop .card_block .card_block__text {
+    font-size: 8px;
+    padding-bottom: 0;
+  }
+  .android .card_img {
+    width: 30px;
+    height: 33px;
+    padding: 0 16px;
+  }
+  .ios .card_img {
+    width: 23px;
+    height: 27px;
+    padding: 0 16px 0 19px;
+  }
+  .card::before {
+    font-size: 14px;
+  }
+}
+@media (max-width: 960px) {
+  .card.desctop {
+    width: 10px;
+  }
+  .card {
+    width: 180px;
+    justify-content: flex-start;
+  }
+  .card_arrow {
+    padding-right: 8px;
+  }
+  .android .card_img {
+    width: 22px;
+    height: 26px;
+    padding: 0 16px;
+  }
+  .ios .card_img {
+    width: 24px;
+    height: 27px;
+    padding: 0 16px 0 19px;
+  }
+}

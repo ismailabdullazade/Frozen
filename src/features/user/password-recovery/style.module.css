@@ -1,0 +1,279 @@
+.body {
+  padding: 32px;
+  box-sizing: border-box;
+  width: 560px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.body.fogot {
+  height: 250px;
+}
+.body.reset_password {
+  height: 270px;
+}
+.block_title {
+  display: inline-flex;
+  align-items: center;
+  margin-left: -11px;
+  margin-top: -11px;
+}
+.title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: var(--white-text-color);
+}
+.form,
+.form_reset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form {
+  padding: 16px 0 24px;
+}
+.form_reset {
+  padding: 16px 0 24px;
+  width: 497px;
+}
+.text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  text-align: start;
+  color: var(--white-text-color);
+  width: 490px;
+  margin-bottom: 16px;
+}
+.btn button:first-child {
+  width: 148px;
+  height: 42px;
+  margin-right: 16px;
+}
+.btn button:last-child {
+  width: 122px;
+  height: 42px;
+}
+.btn {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.body .btn button > div:last-of-type {
+  font-size: 12px;
+}
+.confirm_code,
+.ricib {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  margin-top: 12px;
+  width: 490px;
+}
+.ricib {
+  margin: 0;
+}
+.confirm_code > img {
+  margin: 0 auto;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: -1;
+}
+.confirm_code__phone > img {
+  width: 353px;
+}
+.confirm_code__email > img {
+  width: 373px;
+}
+.wraper_code {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 490px;
+  margin-top: 16px;
+}
+.title_confirm {
+  font-size: 16px;
+  font-weight: 500;
+  font-size: normal;
+  color: var(--text-color-link);
+}
+.confirm_description {
+  width: 490px;
+  font-weight: 500;
+  font-size: 14px;
+  white-space: normal;
+  margin: 6px 0 0;
+}
+.forgot_pass {
+  cursor: pointer;
+  color: #8c95bf;
+  font-weight: 400;
+  font-size: 14px;
+  width: 300px;
+  margin-top: 8px;
+}
+.btn_confirm {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.btn_confirm button,
+.btn_reset button {
+  min-width: 148px;
+  height: 42px;
+  margin-right: 16px;
+}
+.btn_confirm button:last-child {
+  width: 116px;
+}
+.btn_reset button .btn_confirm button:first-child {
+  margin: 0 20px 0 0;
+}
+.btn_confirm button > div:last-child,
+.btn_reset button > div:last-child {
+  font-size: 12px;
+}
+.repeat_password {
+  margin-top: 15px;
+}
+.ricib,
+.wraper_code .ricib > div {
+  width: 475px;
+}
+.close_modal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+.close_modal:hover {
+  animation: 0.3s close;
+}
+.reset_password > img {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  width: 224px;
+  z-index: -1;
+}
+.confirm_description_link {
+  color: var(--text-color-link);
+  text-decoration: underline;
+}
+.confirm_description > span {
+  font-size: 14px;
+}
+@media (max-width: 960px) {
+  .body {
+    padding: 24px;
+    width: 320px;
+    height: 304px;
+  }
+  .body.phone {
+    height: 260px;
+  }
+  .title {
+    font-size: 17px;
+    width: 241px;
+    text-align: start;
+  }
+  .body.reset_password {
+    height: 250px;
+  }
+  .body.fogot {
+    height: 234px;
+  }
+  .btn_confirm button:last-child {
+    margin-right: 0;
+  }
+  .text {
+    margin-bottom: 12px;
+    width: 260px;
+  }
+  .title_confirm {
+    font-size: 16px;
+  }
+  .form {
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+  .btn button:first-child {
+    width: 134px;
+    margin-right: 16px;
+  }
+  .confirm_description {
+    width: 250px;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .confirm_code {
+    width: 270px;
+  }
+  .btn_confirm {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .confirm_code img {
+    width: 96px;
+  }
+  .btn button:first-child {
+    margin-bottom: 15px;
+  }
+  .ricib,
+  .wraper_code .ricib > div {
+    width: 272px;
+  }
+  .btn_confirm button:first-child {
+    margin: 0 38px 0 0;
+  }
+  .btn_confirm button,
+  .btn_confirm button div,
+  .btn button {
+    width: 116px;
+    min-width: 116px;
+  }
+  .btn_reset button {
+    width: 272px;
+    height: 38px;
+    margin-right: 0;
+  }
+  .form_reset {
+    padding: 20px 0;
+    width: 272px;
+  }
+  .confirm_code__phone > img {
+    top: 20px;
+    right: 20px;
+    width: 192px;
+  }
+}
+@media (max-width: 768px) {
+  /* .form_reset {
+        padding: 200px 35px;
+    } */
+}
+@keyframes close {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(45deg);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+  75% {
+    transform: rotateZ(135deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}

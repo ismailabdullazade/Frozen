@@ -1,0 +1,348 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  position: relative;
+  align-items: center;
+  opacity: 0.9;
+}
+.menu .container {
+  width: 100%;
+  display: flex;
+  /*justify-content: flex-end;*/
+  flex-direction: row;
+}
+.menu .burger_menu {
+  align-items: center;
+  display: flex;
+  padding-right: 32px;
+}
+.menu .burger_menu img {
+  height: 20px;
+}
+.menu .casino_links a {
+  color: #c58d44;
+  margin-left: 16px;
+  font-size: 13px;
+  padding-left: 20px;
+  height: 13px;
+  align-items: center;
+  display: flex;
+}
+.menu .app_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 30px;
+}
+.menu .app_menu a {
+  display: inline;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 50px;
+}
+.menu .app_menu a span {
+  white-space: nowrap;
+}
+.menu_link_block {
+  display: flex;
+  justify-content: flex-start;
+  width: calc(100% - 100px);
+  padding-left: 126px;
+}
+.menu .app_menu a:last-of-type {
+  margin-right: 0;
+}
+.menu .app_menu a:hover,
+.menu .casino_links a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.search {
+  cursor: pointer;
+}
+.search img {
+  width: 18px;
+  height: 18px;
+  background: var(--background-input);
+  padding: 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.search:hover img {
+  box-shadow: -2px 1px 3px var(--link-color);
+  transition: 0.3s;
+}
+.search:active img {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+.menu .casino_links a:first-child {
+  background: url(../../images/header/casino3.svg) no-repeat;
+  background-position-y: center;
+  margin-left: 0;
+  color: var(--white-text-color);
+}
+.menu .casino_links a:last-child {
+  background: url(../../images/header/chip2.svg) no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}
+.menu .casino_links a:last-child:hover {
+  background-image: url(../../images/header/chip2-hover.svg);
+}
+.regions {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14.07px;
+  line-height: 17px;
+  color: var(--white-text-color);
+}
+.regions.ru {
+  background: url(../../images/header/ru.svg) no-repeat center left;
+  background-size: 27px;
+  padding: 0.55rem 1.5rem 0.5rem 2rem;
+  color: var(--white-text-color);
+}
+.regions.en {
+  background: url(../../images/header/gb.svg) no-repeat center left;
+  background-size: 27px;
+  padding: 0.55rem 1.5rem 0.5rem 2rem;
+  color: var(--white-text-color);
+}
+.menu .sub_container {
+  position: relative;
+}
+.menu .sub {
+  background: rgba(28, 28, 28, 0.99);
+  box-shadow: 10px 5px 9px rgb(0 0 0 / 15%);
+  min-width: 80px;
+  left: -16px;
+  top: 40px;
+  border-radius: 0 0 5px 5px;
+  z-index: 9999;
+}
+.sub a {
+  padding: 8px 32px 8px 43px;
+  display: block;
+  color: var(--white-text-color);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sub > div:before {
+  content: "";
+  background: var(--grey-color-7);
+  position: absolute;
+  bottom: -1px;
+  height: 1px;
+  left: 0;
+  right: 0;
+}
+.sub > div:last-child:before {
+  content: none;
+}
+.sub .global {
+  background: url(../../images/header/gb.svg) no-repeat left 1rem top 11px;
+  background-size: 17px;
+  position: relative;
+}
+.sub .russia {
+  background: url(../../images/header/ru.svg) no-repeat left 1rem top 11px;
+  background-size: 17px;
+  position: relative;
+}
+.app_menu__img {
+  position: absolute;
+  top: -30px;
+  right: 120px;
+}
+.app_menu__notification {
+  margin: 0 0 0 30px;
+  position: relative;
+  background: #19182a;
+  border-radius: 5px;
+  clipPath: polygon(0% 0%, 77% 0%, 100% 26%, 100% 100%, 0% 100%);
+}
+.notif_icon {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  background: url("/src/images/header/notif_empty_close.svg") no-repeat center;
+  transition: 0.3s;
+}
+.notif_icon_active {
+  background: url("/src/images/header/notif_empty_close.svg") no-repeat center;
+}
+.notif_icon:global(.notif_ring) {
+  background: url("/src/images/header/notif_ring_close.svg") no-repeat center;
+}
+.notif_icon_active:global(.notif_ring) {
+  background: url("/src/images/header/notif_ring_close.svg") no-repeat center;
+}
+.app_menu__notification .svg_circle {
+  position: absolute;
+  top: 7px;
+  left: 16px;
+  width: 23px;
+  height: 23px;
+  background-color: #d8001e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app_menu__notification .svg_circle__text {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--white-text-color);
+}
+.app_menu__notification .svg > * {
+  stroke: var(--link-color-4);
+  fill: var(--link-color-4);
+  cursor: pointer;
+}
+.app_menu__notification .svg_active > * {
+  stroke: var(--link-color-3);
+  fill: var(--link-color-3);
+}
+@media (max-width: 1700px) {
+  .menu .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1560px) {
+  .menu_link_block {
+    padding-left: 45px;
+  }
+  .menu .app_menu a {
+    margin-right: 36px;
+  }
+}
+@media (max-width: 1439px) {
+  .menu_link_block {
+    display: none;
+  }
+  .menu .app_menu {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 1400px) {
+  .app_menu__notification {
+    margin: 0 0 0 22px;
+  }
+}
+@media (max-width: 1365px) {
+  .menu .app_menu a {
+    margin-right: 3%;
+  }
+}
+@media (max-width: 1199px) {
+  .menu .app_menu a {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 1140px) {
+  .menu_link_block {
+    padding-left: 20px;
+  }
+  .menu .app_menu a {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1080px) {
+  .menu_link_block {
+    padding-left: 20px;
+  }
+  .notif_icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 920px) {
+  .menu .burger_menu {
+    display: none;
+  }
+  .menu .casino_links a:last-child {
+    padding-left: 23px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .menu .app_menu > a:not(.regions) {
+    display: none;
+  }
+  .menu .app_menu > a:last-child {
+    margin-right: 0;
+  }
+  .menu::before {
+    width: 0;
+  }
+  /*.menu .container {*/
+  /*    padding: 0 20px 0 42px;*/
+  /*}*/
+  .menu .casino_links {
+    display: none;
+  }
+  .menu_padding {
+    padding-right: 308px;
+  }
+  .menu .app_menu {
+    padding-right: 12px;
+  }
+  .app_menu__img {
+    display: none;
+  }
+}
+@media (min-width: 1360px) {
+  .menu .casino_links a {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .menu .casino_links a:last-child {
+    padding-left: 20px;
+  }
+  .menu .casino_links a {
+    margin-left: 15px;
+  }
+  .menu .app_menu > a:not(.regions) {
+    display: inline;
+  }
+  .menu .app_menu > a {
+    display: inline;
+    color: #969cad;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 50px;
+  }
+  .menu .app_menu > a:last-child {
+    margin-right: 20px;
+  }
+  .menu .app_menu > a:hover {
+    text-decoration: none;
+  }
+}
+@media (max-width: 1080px) {
+  .menu .app_menu a span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 960px) {
+  .menu .container {
+    padding: 0;
+  }
+  .app_menu__notification .svg,
+  .app_menu__notification .svg_circle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .app_menu__notification {
+    display: none;
+  }
+}

@@ -1,0 +1,106 @@
+.background {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  background: rgb(13, 16, 27);
+  transition: opacity 0.3s ease;
+}
+.background.open {
+  overflow: visible;
+  opacity: 1;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease;
+}
+.wraper {
+  width: 100%;
+  height: auto;
+  margin: 10px 24px 20px 24px;
+  border-radius: 16px;
+  background: var(--background-switch);
+  box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.3) inset;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 12px;
+  column-gap: 18px;
+  user-select: none;
+}
+.wraper.not_providers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 270px;
+}
+.text_notProviders {
+  font-size: 16px;
+  font-weight: 500;
+}
+.card {
+  overflow: hidden;
+  max-height: 0;
+  box-sizing: border-box;
+  display: flex;
+  width: 85px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #0a1026;
+  cursor: pointer;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
+}
+.background.open .card {
+  overflow: visible;
+  max-height: 50px;
+  opacity: 1;
+}
+.card:hover,
+.card.selected {
+  background: #111b3c;
+}
+@media (max-width: 1500px) {
+  .wraper {
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    min-height: 325px;
+    width: 1303px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 1320px) {
+  .wraper {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    min-height: 435px;
+    width: 920px;
+    padding: 18px 13px;
+  }
+}
+@media (max-width: 960px) {
+  .wraper {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    min-height: 710px;
+  }
+  .card {
+    width: 113px;
+  }
+}
+@media (max-width: 767px) {
+  .wraper {
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .wraper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,17 @@
+.page,
+.active {
+  cursor: pointer;
+  margin-right: 12px;
+}
+.page {
+  width: 8px;
+  height: 8px;
+  background-color: var(--link-color);
+  opacity: 0.25;
+}
+.active {
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+  background-color: var(--link-color);
+}

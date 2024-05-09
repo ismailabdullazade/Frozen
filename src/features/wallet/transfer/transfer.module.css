@@ -1,0 +1,321 @@
+.transfer {}
+.transfer__tab_content {
+    padding-top: 0;
+}
+
+.transfer__wrapper {
+    display: flex;
+    position: relative;
+    min-height: 590px;
+}
+.transfer__wrapper > * {
+    flex-basis: 50%;
+}
+.transfer__detail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 60px 50px 125px;
+    box-sizing: border-box;
+}
+.transfer__detail > * {
+    max-width: 416px;
+    margin: 0 auto;
+}
+.transfer__detailImg {
+    width: 254px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    margin: 0 auto;
+    text-align: center;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.75));
+    color: var(--white-text-color);
+    height: 94px;
+    background-image: url(../../../images/transfer-bg.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transfer__detailImg img {
+    margin-left: 11px;
+}
+.transfer__detailDescription {
+    margin-top: 52px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--white-text-color);
+}
+.transfer__alt {
+    padding: 80px 20px 130px;
+    box-sizing: border-box;
+    border-left: 1px solid var(--border-color-1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.transfer__alt.card_deposit {
+    max-width: 50%;
+}
+.inner_pane {
+    padding: 0;
+}
+.transfer__detailCurrencies {
+    margin-top: 20px;
+}
+.transfer__detailCurrencies > * {
+    margin-top: 22px;
+}
+.transfer__detailCurrencyCovert {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--grey-color-2);
+}
+.amount  {
+    background-color: var(--background-color-11);
+    padding: 9px 13px;
+    border-radius: 43px;
+    border: 1px solid var(--border-color-6);
+}
+.amount input {
+    min-height: 40px;
+    padding: 5px 28px 5px 18px;
+}
+.currency_sign {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    top: 2px;
+    position: relative;
+}
+.transfer__alt .withdrawal_requisites {
+    margin: 0 auto;
+    max-width: 395px;
+    text-align: left;
+    background-color: var(--background-color-19);
+    max-height: 92px;
+    background: var(--background-color-11);
+    border: 1px solid var(--border-color-6);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-2);
+    box-sizing: border-box;
+    padding: 8px 16px 14px;
+}
+.transfer__alt .withdrawal_requisites .title {
+    color: var(--grey-color-2);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 8px;
+}
+.transfer__alt .withdrawal_requisites input {
+    min-height: 18px;
+    height: 18px;
+    background: var(--background-color-18);
+    border-radius: 5px;
+}
+.transfer__altAvatars {
+    display: flex;
+    margin-top: 37px;
+    align-items: center;
+    justify-content: center;
+}
+.transfer__altAvatarsUnion {
+    margin: 0 30px;
+}
+.transfer__altAvatarsBlock {
+    width: 140px;
+    height: 157px;
+    position: relative;
+}
+.transfer__altAvatarsBlockLogin {
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    position: absolute;
+    width: 157px;
+    bottom: -10px;
+    box-sizing: border-box;
+    left: -8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    background: radial-gradient(75.88% 110.31% at 81.91% 49.24%, #000000 0%, #161616 100%);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+}
+.checkedLogin {
+    z-index: 9;
+    left: 22px;
+    bottom: -32px;
+}
+.garillaUser {
+    background-image: url("../../../images/transfer-user-avatar.svg")
+}
+.pokerUserEmpty {
+    background-image: url("../../../images/transfer-user-empty-avatar.svg")
+}
+.submit button {
+    margin-top: 65px;
+    width: 260px;
+}
+
+.hexagon {
+    transform: scale(0.75);
+    position: relative;
+    width: 190px;
+    height: 110px;
+    /*   background-image: url('https://i.imgur.com/IEiqEV0.jpg'); */
+    /*background-image: url('https://dev.garillapoker.com/storage/avatars/Ава_0001_1564131506_mh-5.jpg');*/
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    /* Text styling */
+    /*line-height: 110px;*/
+    /*text-align: center;*/
+    /*font-family: sans-serif;*/
+    /*font-size: 15px;*/
+    /*font-weight: bold;*/
+    /*letter-spacing: 6px;*/
+    /*color: #fff;*/
+    /*color: rgba(255,255,255,.5);*/
+    /*cursor: pointer;*/
+    /*transition: color 500ms ease, text-shadow 500ms ease;*/
+    border: 5px solid var(--link-color);
+    /*   box-shadow: inset 0 0 3px 3px #000; */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.hexagon .face1,
+.hexagon .face2 {
+    border-left: 5px solid var(--link-color);
+    border-right: 5px solid var(--link-color);
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    box-sizing: border-box;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    overflow: hidden;
+    background: inherit;
+    z-index: -1;
+    /* Keeps borders smooth in webkit */
+    backface-visibility: hidden;
+}
+.hexagon .face1:before,
+.hexagon .face2:before {
+    content: '';
+    position: absolute;
+    width: 185px;
+    height: 207px;
+    background: inherit;
+}
+
+.hexagon .face1 { transform: rotate(60deg); }
+.hexagon .face1:before {
+    left: 0;
+    transform-origin: left top;
+    transform: rotate(-60deg) translate(-86px, 0);
+}
+
+.hexagon .face2 { transform: rotate(-60deg); }
+.hexagon .face2:before {
+    right: 0;
+    transform-origin: right top;
+    transform: rotate(60deg) translate(104px, 0);
+}
+@media (max-width: 1280px) {
+    .transfer__wrapper {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .transfer__alt {
+        border: none;
+        padding: 56px 20px;
+    }
+    .transfer__detail {
+        width: 100%;
+        padding: 64px 20px 44px;
+    }
+    .transfer__detail::before {
+        content: "";
+        box-sizing: border-box;
+        width: 100%;
+        height: 1px;
+        background-color: var(--background-color-7);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .transfer__wrapper {
+        flex-wrap: wrap;
+    }
+    .transfer__wrapper > * {
+        flex-basis: 100%;
+    }
+    .transfer__alt {
+        padding-top: 0;
+    }
+    .transfer__detail {
+        padding: 60px 20px 50px;
+    }
+    .transfer__alt.card_deposit {
+        padding-top: 50px;
+        max-width: 100%;
+    }
+    .transfer__altAvatars {
+        transform: scale(0.7);
+        padding-left: 30px;
+    }
+    .transfer__altAvatarsUnion {
+        margin-left: 30px;
+    }
+    .transfer__altAvatarsBlock {
+        min-width: 140px;
+    }
+    .transfer__detailCurrencyCovert {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .transfer__alt .withdrawal_requisites .title {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .transfer__detailDescription {
+        margin-top: 50px;
+    }
+    .transfer__detailCurrencies {
+        margin-top: 28px;
+    }
+    .submit {
+        margin: 0 auto 0;
+    }
+    .submit button {
+        width: 260px;
+        margin-top: 40px;
+    }
+    .transfer__altAvatars {
+        margin-top: 27px;
+    }
+}

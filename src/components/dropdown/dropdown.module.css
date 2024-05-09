@@ -1,0 +1,29 @@
+.month_select {
+    margin-left: 10px;
+    transform: rotate(180deg);
+    transition: 0.1s ease-in transform;
+}
+.month_select.expanded {
+    transform: rotate(0deg);
+}
+.months_list {
+    position: absolute;
+    top: 16px;
+    opacity: 1;
+    visibility: visible;
+    transition:visibility 0.2s linear,opacity 0.2s linear;
+    box-shadow: 0 100px 80px rgba(104, 104, 104, 0.0196802), 0 5px 33.4221px rgba(104, 104, 104, 0.1), 0 22.3363px 17.869px rgba(104, 104, 104, 0.035), 0 12.5216px 10.0172px rgba(104, 104, 104, 0.0417275);
+}
+.months_list.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.title {
+    letter-spacing: -0.408px;
+    color: var(--white-text-color);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    padding: 14px 0 8px;
+}

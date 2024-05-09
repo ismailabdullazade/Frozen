@@ -1,0 +1,90 @@
+.garilla-datepicker {
+  --adp-day-cell-height: 35px;
+  --adp-cell-border-radius: 5px;
+  --adp-padding: 16px;
+}
+
+.garilla-datepicker.air-datepicker {
+  background: #191829;
+  border: 1px solid var(--button-wallet);
+  border-radius: 6px;
+  box-shadow: var(--box-shadow-1);
+  width: auto;
+  min-width: 277px;
+}
+.garilla-datepicker * {
+  transition: 0.15s ease-in all;
+  border-radius: 6px 6px 0 0;
+}
+.garilla-datepicker .air-datepicker-nav--title {
+  color: var(--white-text-color);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 5px;
+  padding: 5px 17px;
+}
+.garilla-datepicker .air-datepicker-nav--title:hover:not(.-disabled-) {
+  background-color: var(--background-color-9);
+}
+.garilla-datepicker .air-datepicker-nav--title i {
+  color: var(--grey-color-4);
+}
+.garilla-datepicker .air-datepicker-nav {
+  border-bottom: 0 solid var(--border-color-2);
+  padding: 16px;
+  background: #191829;
+  padding-bottom: 0;
+}
+.garilla-datepicker .air-datepicker-nav--action {
+  background: #c800cc;
+  border-radius: 50%;
+}
+.garilla-datepicker .air-datepicker-nav--action path {
+  stroke: var(--white-text-color);
+}
+.garilla-datepicker .air-datepicker-nav--action:hover path {
+  stroke: var(--white-text-color);
+}
+.garilla-datepicker .air-datepicker--pointer {
+  display: none;
+}
+.garilla-datepicker .air-datepicker-body--day-name {
+  font-family: Roboto, sans-serif;
+  margin-top: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: default;
+  color: var(--text-color-login);
+}
+.garilla-datepicker .air-datepicker-cell.-year-,
+.garilla-datepicker .air-datepicker-cell.-day-,
+.garilla-datepicker .air-datepicker-cell.-month- {
+  color: var(--white-text-color);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.garilla-datepicker .air-datepicker-cell.-disabled- {
+  opacity: 0.2;
+}
+.garilla-datepicker .air-datepicker-cell.-day- {
+  width: 35px;
+}
+.garilla-datepicker .air-datepicker-cell.-selected- {
+  background: var(--background-color-22);
+}
+.garilla-datepicker .air-datepicker-cell.-focus-:not(.-selected-),
+.garilla-datepicker .air-datepicker-cell.-day-:hover {
+  background: var(--button-wallet);
+  border-radius: 50%;
+}
+.garilla-datepicker .air-datepicker-cell.-other-month- {
+  color: var(--grey-color-5);
+}
+.garilla-datepicker .air-datepicker-cell.-in-range- {
+  background: var(--background-color-9);
+}

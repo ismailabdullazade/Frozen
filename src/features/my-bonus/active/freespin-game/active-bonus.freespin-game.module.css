@@ -1,0 +1,57 @@
+.freespinGame {
+  padding: 0 0 40px;
+  box-sizing: border-box;
+}
+.freespinGame__wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.freespinGame__image {
+  width: 99px;
+  height: 99px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.freespinGame__infoTitle {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFF;
+  white-space: nowrap;
+  width: 204px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.freespinGame__infoAmount {
+  color: #FFF;
+  font-size: 40px;
+  line-height: 49px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.freespinGame__infoUnits {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+}
+@media (max-width: 960px) {
+  .freespinGame__infoTitle {
+    width: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .freespinGame__image {
+    width: 110px;
+    height: 110px;
+  }
+  .freespinGame__info {
+    margin-left: 0;
+    margin-top: 24px;
+    text-align: center;
+  }
+  .freespinGame__info p:last-child {
+    margin-bottom: 0;
+  }
+}

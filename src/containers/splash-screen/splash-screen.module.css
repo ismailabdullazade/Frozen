@@ -1,0 +1,92 @@
+.splash {
+    background-color: #0f131f;
+    /*transition:visibility 0.2s linear,opacity 0.2s linear;*/
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1500;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-size: contain;
+}
+.splash.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.wrapper {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    overflow-x: hidden;
+    transition: width .5s ease-in;
+}
+.splash.visible .container {
+    animation-name: expand;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.logo {
+    display: block;
+    width: 90vw;
+    margin: 0 auto;
+}
+.splash.visible .logo {
+    animation-name: ripple;
+    animation-delay: .5s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: 50%;
+    }
+    .logo {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 920px) {
+    .wrapper {
+        width: 30%;
+    }
+    .container {
+        width: 30%;
+    }
+    .logo {
+        width: 30vw;
+    }
+}
+
+@keyframes expand {
+    0% {
+        width: 30%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: brightness(0.8);
+        transform: scale(.996);
+    }
+
+    100% {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+}

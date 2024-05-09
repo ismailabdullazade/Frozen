@@ -1,0 +1,125 @@
+.wrapper {
+    width: 100%;
+    padding-bottom: 2px;
+    position: relative;
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    /*overflow: hidden;*/
+    /*margin-bottom: -6x;*/
+    width: 100%;
+    border-radius: 5px;
+}
+.label {
+    margin-bottom: 4px;
+    display: block;
+    color: var(--white-text-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+.inactive {
+    box-shadow: inset 0 0 1px 1px #000;
+    border: 1px solid var(--border-color-3);
+    background: var(--background-color-24);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    overflow: hidden;
+    cursor: default;
+    padding: 11px 0;
+    width: 100%;
+    bottom: -2px;
+    right: 0;
+    height: 42px;
+}
+.inactive .title::selection {
+    background-color: transparent;
+    color: var(--input-color);
+}
+.inactive .title {
+    color: var(--input-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    width: 234px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.active {
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+    bottom: -2px;
+    width: 0;
+    left: 0;
+    height: 42px;
+}
+.active input {
+    width: auto;
+    background-color: var(--background-color-4);
+    box-shadow: inset 0 7px 7px 4px var(--border-color-5);
+    padding: 12px 19px 10px;
+    height: 100%;
+    border: 1px solid var(--border-color-2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    outline: none;
+    color: var(--white-text-color);
+}
+.active input,
+.active input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+.active input::placeholder {
+    font-family: 'Montserrat Medium Italic', sans-serif, Serif;
+}
+.button {
+    float: left;
+    position: relative;
+    bottom: -6px;
+    left: 0;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.automovement {
+    transition: 300ms ease-out left, 300ms ease-out width;
+}
+.button:not(.confirmed) {
+    cursor: pointer;
+}
+.button.is_disabled {
+    cursor: not-allowed;
+}
+.button.is_disabled img.visible {
+    opacity: 65%;
+}
+.button img {
+    height: 42px;
+    width: auto;
+    pointer-events: none;
+    border-radius: 8px;
+    box-shadow: 2px 4px 7px 2px #000;
+    transition: visibility 0.2s linear, opacity 0.2s linear;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.button img.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.button img.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.button img:last-child {
+    position: absolute;
+    left: 0;
+}

@@ -1,0 +1,10 @@
+.has_no_items {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+.has_no_items > * {
+    flex: 1;
+}

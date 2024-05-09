@@ -1,0 +1,119 @@
+.history {
+  padding-top: 0;
+}
+
+.pane {
+  min-height: 546px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+}
+.history .filters {
+  display: flex;
+  gap: 12px;
+  height: 40px;
+  padding: 17px 32px;
+}
+.history .filters .select,
+.history .filters input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 22px 11px;
+}
+.history .filters .select {
+  line-height: 12px;
+}
+.history .filters input::placeholder,
+.history .filters .select {
+  opacity: 0.5 !important;
+}
+.history .filters .selectedStatus {
+  opacity: 1 !important;
+}
+.history .filters .select + img {
+  top: calc(50% - 8px);
+}
+.history .filters > * {
+  width: 260px;
+  flex-shrink: 0;
+  height: 100%;
+}
+.info_container {
+  justify-content: center;
+  display: flex;
+  min-height: 400px;
+  align-items: center;
+}
+.info_container button {
+  width: 261px;
+  height: 49px;
+}
+.direction_column {
+  flex-direction: column;
+}
+.no_bonus_text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 34px;
+}
+.pagination {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 22px 0 38px;
+  padding: 0 42px;
+}
+.gift {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 32px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 26px;
+}
+.gift img {
+  padding-top: 8px;
+  padding-left: 2px;
+}
+
+@media (max-width: 1400px) {
+  .history .filters {
+    gap: 20px;
+    padding: 16px 46px 15px;
+  }
+  .pane {
+    border: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .history .filters {
+    padding: 15px;
+    gap: 22px;
+    height: 36px;
+  }
+  .history .filters .select,
+  .history .filters input {
+    padding: 10px 15px 10px;
+  }
+  .history .filters .selectWrapper > *:first-child > div,
+  .history .filters .select,
+  .history .filters input {
+    height: 36px;
+  }
+  .history .filters > * {
+    flex-grow: 1;
+    flex-basis: calc(50% - 11px);
+    width: auto;
+  }
+}

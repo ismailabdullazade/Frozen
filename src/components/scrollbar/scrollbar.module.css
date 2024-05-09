@@ -1,0 +1,27 @@
+.track {
+  position: absolute;
+  z-index: 99;
+  background-color: var(--background-scroll);
+  width: 3px;
+  right: 2px;
+  bottom: 5px;
+  top: 5px;
+  border-radius: 3px;
+}
+.thumb {
+  background-color: var(--text-color-link);
+  border-radius: 1px;
+}
+::-webkit-scrollbar {
+  min-width: 1px;
+  min-height: 1px;
+}
+@media (max-width: 906px) {
+  .track {
+    width: 3px !important;
+    right: 6px;
+  }
+  .thumb {
+    width: 3px !important;
+  }
+}

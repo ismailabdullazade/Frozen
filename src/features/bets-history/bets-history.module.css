@@ -1,0 +1,97 @@
+.bets_history {
+    padding-top: 0;
+}
+
+.pane {
+    padding: 0 12px;
+}
+.subpane {
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    min-height: 648px;
+}
+.bets_history .filters {
+    height: 98px;
+    display: flex;
+    align-items: center;
+    padding: 0 56px;
+}
+.bets_history .filters > * {
+    margin-right: 14px;
+}
+.bets_history .filters .datepicker input,
+.bets_history .filters .select {
+    height: 38px;
+    width: 260px;
+    min-height: 38px;
+    padding: 9px 12px;
+}
+.bets_history .filters .select + img {
+    top: calc(50% - 5px);
+}
+.bets_history .tab_content {
+    padding-top: 0;
+}
+.content_pane {
+    padding-top: 6px;
+}
+.content_pane .content {
+    margin-bottom: 0;
+    padding: 17px 62px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--background-color-19);
+}
+.date_block {
+    line-height: 22px;
+}
+.date {
+    font-size: 17px;
+    font-weight: 600;
+}
+.time {
+    font-size: 16px;
+    font-weight: 400;
+    color: #b7b7b7;
+}
+
+.amount {
+    text-align: center;
+    margin-right: 10%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.withdrawal {
+    color: var(--danger-color);
+}
+.deposit {
+    color: #559e3c;
+}
+.text {
+    margin-left: 12%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white-text-color);
+}
+.game_info {
+    justify-content: right;
+    display: flex;
+    align-items: center;
+}
+.game_info .title {
+    font-size: 16px;
+    text-align: right;
+    margin-right: 17px;
+    white-space: pre-line;
+    font-weight: 600;
+    color: var(--white-text-color);
+}
+.game_info img {
+    height: 48px;
+    box-sizing: border-box;
+    border: 1px solid rgba(110, 133, 207, 0.3);
+    box-shadow: var(--box-shadow-2);
+    border-radius: 4px;
+}

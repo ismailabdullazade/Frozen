@@ -1,0 +1,236 @@
+.available {
+  padding-top: 0;
+  border-radius: 0 0 20px 20px;
+}
+.available__not_available {
+  /* :-)*/
+  max-width: 450px;
+  margin: 0 185px;
+  text-align: center;
+}
+.available__not_available img {
+  max-width: 100%;
+}
+.available_wraper {
+  display: grid;
+  grid-template-columns: 66.6% 1px 33.3%;
+}
+.pane {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 20px 20px;
+  background: rgba(18, 19, 32, 0.8);
+  backdrop-filter: blur(10px);
+}
+.activation_info {
+  margin: 73px 0 0;
+  width: 376px;
+}
+.activation_info__battonBlock {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 78px;
+  justify-content: end;
+}
+.activation {
+  width: 376px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.activation__text {
+  margin: 0 0 25px 0;
+  font-size: 12px;
+  line-height: normal;
+  text-align: center;
+
+  color: #414a65;
+  font-weight: 600;
+}
+.carousel {
+  padding: 37px 0 59px;
+}
+.carousel :global .swiper {
+  padding-top: 30px;
+}
+.carousel :global .swiper-wrapper {
+  margin-bottom: 40px;
+}
+.carousel.loading :global .swiper {
+  padding-top: 0;
+}
+.divider {
+  background: rgba(110, 133, 207, 0.1);
+  width: 0;
+}
+.button {
+  color: var(--brown);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 11px 40px;
+}
+.cards_wraper,
+.loading_block {
+  gap: 24px 32px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 160px);
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select_bonus {
+  color: #414a65;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 13px;
+}
+
+.no_bonus {
+  width: 160px;
+  height: 199px;
+}
+.bonus_card {
+  width: 160px;
+  height: 199px;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+  pointer-events: auto;
+}
+.bonus_card:hover,
+.bonus_card__active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.select_bonus_top {
+  display: none;
+}
+.arrow_left,
+.arrow_right {
+  width: 15px;
+  height: 20px;
+  cursor: pointer;
+}
+.arrow_left {
+  transform: rotateZ(180deg);
+  margin-right: 15px;
+}
+.arrow_right {
+  margin-left: 3px;
+}
+.arrow_left:hover,
+.arrow_right:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.arrow_left:active {
+  transform: rotateZ(180deg) scale(0.9);
+  transition: 0.2s;
+}
+.arrow_right:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+@media (max-width: 1440px) {
+  .cards_wraper,
+  .loading_block{
+    grid-template-columns: repeat(4, 145px);
+  }
+  .no_bonus {
+    width: 145px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .available__not_available {
+    max-width: 80%;
+  }
+  .activation_info {
+    margin: 67px 0 0;
+    width: 320px;
+  }
+  .activation_info__battonBlock {
+    padding-bottom: 69px;
+  }
+  .cards_wraper,
+  .loading_block {
+    grid-template-columns: repeat(3, 145px);
+    gap: 16px;
+  }
+  .bonus_card:hover,
+  .bonus_card__active {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  .no_bonus,
+  .bonus_card {
+    width: 145px;
+    height: 180px;
+  }
+  .available_wraper {
+    display: grid;
+    grid-template-columns: 50% 1px 50%;
+  }
+  .carousel {
+    padding: 50px 0 80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cards_wraper,
+  .loading_block{
+    grid-template-columns: repeat(2, 145px);
+    grid-template-rows: repeat(1, 190px);
+    grid-auto-flow: row;
+  }
+}
+@media (max-width: 767px) {
+  .available_wraper {
+    display: block;
+  }
+  .carousel {
+    padding: 0 0 30px;
+  }
+  .carousel :global .swiper {
+    padding-top: 21px;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+  }
+  .activation_info {
+    margin-top: 30px;
+    margin-left: 24px;
+  }
+  .activation_info__battonBlock {
+    padding: 30px 0;
+  }
+  .available__not_available {
+    border-radius: 0 0 20px 20px;
+  }
+  .activation {
+    width: auto;
+  }
+  .select_bonus_top {
+    display: block;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  .select_bonus {
+    display: none;
+  }
+}

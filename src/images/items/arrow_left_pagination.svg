@@ -1,0 +1,16 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width="13px"
+    height="17px"
+>
+    <path
+    fillRule="evenodd"
+    stroke="rgb(255, 255, 255)"
+    stroke-width="2px"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    fill="none"
+    d="M9.944,2.970 L2.039,8.004 L9.944,13.038 "
+    />
+</svg>

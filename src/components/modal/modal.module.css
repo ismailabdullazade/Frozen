@@ -1,0 +1,636 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  overflow-y: auto;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    visibility 0.6s linear,
+    opacity 0.6s linear;
+  backdrop-filter: blur(10px);
+}
+.overlay.recapcha {
+  z-index: 99999;
+}
+.overlay.opened,
+.bonus.opened {
+  animation-name: open-overlay;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+.overlay.bonus {
+  background: rgba(2, 5, 14, 0.8);
+  backdrop-filter: none;
+}
+.modal.bonus {
+  border-radius: 25px 25px 0px 0px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px #000;
+  width: 100vw;
+  top: 53px;
+  bottom: 0;
+  height: calc(100vh - 53px);
+  margin: 0;
+}
+.overlay.closed {
+  animation-name: close-overlay;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+.modal {
+  transition: 0.6s ease-in transform;
+  position: relative;
+  margin: auto;
+}
+.modal.log {
+  margin: auto 3px auto auto;
+}
+.modal.search {
+  background: var(--background-modal);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--link-color);
+  filter: var(--filter-shadow-focuse-visible);
+  width: 1400px;
+  height: 1300px;
+  transform: scale(0);
+}
+.modal.search .modal_boder__one::after,
+.modal.search .modal_boder__one::before,
+.modal.search .modal_boder::after,
+.modal.search .modal_boder::before {
+  background-color: var(--link-color);
+}
+.modal.log .modal_boder__one::after,
+.modal.log .modal_boder__one::before,
+.modal.log .modal_boder::after,
+.modal.log .modal_boder::before,
+.modal.fogot .modal_boder__one::after,
+.modal.fogot .modal_boder__one::before,
+.modal.fogot .modal_boder::after,
+.modal.fogot .modal_boder::before,
+.modal.recovery .modal_boder__one::after,
+.modal.recovery .modal_boder__one::before,
+.modal.recovery .modal_boder::after,
+.modal.recovery .modal_boder::before,
+.modal.safety .modal_boder__one::after,
+.modal.safety .modal_boder__one::before,
+.modal.safety .modal_boder::after,
+.modal.safety .modal_boder::before,
+.modal.recapcha .modal_boder__one::after,
+.modal.recapcha .modal_boder__one::before,
+.modal.recapcha .modal_boder::after,
+.modal.recapcha .modal_boder::before,
+.modal.welcome .modal_boder__one::after,
+.modal.welcome .modal_boder__one::before,
+.modal.welcome .modal_boder::after,
+.modal.welcome .modal_boder::before,
+.modal.recovery_phone .modal_boder__one::after,
+.modal.recovery_phone .modal_boder__one::before,
+.modal.recovery_phone .modal_boder::after,
+.modal.recovery_phone .modal_boder::before,
+.modal.cancel_bonus .modal_boder__one::after,
+.modal.cancel_bonus .modal_boder__one::before,
+.modal.cancel_bonus .modal_boder::after,
+.modal.cancel_bonus .modal_boder::before,
+.modal.kauri .modal_boder__one::after,
+.modal.kauri .modal_boder__one::before,
+.modal.kauri .modal_boder::after,
+.modal.kauri .modal_boder::before {
+  background-color: var(--border-modal);
+}
+.modal.search .modal_boder__one::after,
+.modal.search .modal_boder__one::before,
+.modal.search .modal_boder::after,
+.modal.search .modal_boder::before,
+.modal.log .modal_boder__one::after,
+.modal.log .modal_boder__one::before,
+.modal.log .modal_boder::after,
+.modal.log .modal_boder::before,
+.modal.fogot .modal_boder__one::after,
+.modal.fogot .modal_boder__one::before,
+.modal.fogot .modal_boder::after,
+.modal.fogot .modal_boder::before,
+.modal.recovery .modal_boder__one::after,
+.modal.recovery .modal_boder__one::before,
+.modal.recovery .modal_boder::after,
+.modal.recovery .modal_boder::before,
+.modal.safety .modal_boder__one::after,
+.modal.safety .modal_boder__one::before,
+.modal.safety .modal_boder::after,
+.modal.safety .modal_boder::before,
+.modal.recapcha .modal_boder__one::after,
+.modal.recapcha .modal_boder__one::before,
+.modal.recapcha .modal_boder::after,
+.modal.recapcha .modal_boder::before,
+.modal.welcome .modal_boder__one::after,
+.modal.welcome .modal_boder__one::before,
+.modal.welcome .modal_boder::after,
+.modal.welcome .modal_boder::before,
+.modal.recovery_phone .modal_boder__one::after,
+.modal.recovery_phone .modal_boder__one::before,
+.modal.recovery_phone .modal_boder::after,
+.modal.recovery_phone .modal_boder::before,
+.modal.cancel_bonus .modal_boder__one::after,
+.modal.cancel_bonus .modal_boder__one::before,
+.modal.cancel_bonus .modal_boder::after,
+.modal.cancel_bonus .modal_boder::before,
+.modal.kauri .modal_boder__one::after,
+.modal.kauri .modal_boder__one::before,
+.modal.kauri .modal_boder::after,
+.modal.kauri .modal_boder::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 2px;
+}
+.modal.search .modal_boder::after,
+.modal.log .modal_boder::after,
+.modal.fogot .modal_boder::after,
+.modal.recovery .modal_boder::after,
+.modal.safety .modal_boder::after,
+.modal.recapcha .modal_boder::after,
+.modal.welcome .modal_boder::after,
+.modal.recovery_phone .modal_boder::after,
+.modal.cancel_bonus .modal_boder::after,
+.modal.kauri .modal_boder::after {
+  top: 8px;
+  right: -5px;
+  transform: rotate(45deg);
+}
+.modal.search .modal_boder::before,
+.modal.log .modal_boder::before,
+.modal.fogot .modal_boder::before,
+.modal.recovery .modal_boder::before,
+.modal.safety .modal_boder::before,
+.modal.recapcha .modal_boder::before,
+.modal.welcome .modal_boder::before,
+.modal.recovery_phone .modal_boder::before,
+.modal.cancel_bonus .modal_boder::before,
+.modal.kauri .modal_boder::before {
+  top: 8px;
+  left: -5px;
+  transform: rotate(-45deg);
+}
+.modal.search .modal_boder__one::after,
+.modal.log .modal_boder__one::after,
+.modal.fogot .modal_boder__one::after,
+.modal.recovery .modal_boder__one::after,
+.modal.safety .modal_boder__one::after,
+.modal.recapcha .modal_boder__one::after,
+.modal.welcome .modal_boder__one::after,
+.modal.recovery_phone .modal_boder__one::after,
+.modal.cancel_bonus .modal_boder__one::after,
+.modal.kauri .modal_boder__one::after {
+  bottom: 8px;
+  right: -5px;
+  transform: rotate(-45deg);
+}
+.modal.search .modal_boder__one::before,
+.modal.log .modal_boder__one::before,
+.modal.fogot .modal_boder__one::before,
+.modal.recovery .modal_boder__one::before,
+.modal.safety .modal_boder__one::before,
+.modal.recapcha .modal_boder__one::before,
+.modal.welcome .modal_boder__one::before,
+.modal.recovery_phone .modal_boder__one::before,
+.modal.cancel_bonus .modal_boder__one::before,
+.modal.kauri .modal_boder__one::before {
+  bottom: 8px;
+  left: -5px;
+  transform: rotate(45deg);
+}
+.modal.gamepad,
+.modal.log {
+  background: var(--background-modal);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--border-modal);
+  width: 488px;
+  height: 797px;
+  transform: scale(0);
+}
+.modal.search,
+.modal.gamepad,
+.modal.log,
+.modal.fogot,
+.modal.recovery,
+.modal.safety,
+.modal.recapcha,
+.modal.welcome,
+.modal.recovery_phone,
+.modal.cancel_bonus,
+.modal.kauri {
+  clip-path: polygon(
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% calc(100% - 20px),
+    calc(100% - 20px) 100%,
+    20px 100%,
+    0 calc(100% - 20px),
+    0 20px,
+    20px 0
+  );
+}
+/* .modal.log::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -7px;
+  width: 29px;
+  height: 2px;
+  transform: rotate(-45deg);
+  background: var(--border-modal);
+}
+.modal.log::after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: -7px;
+  width: 29px;
+  height: 2px;
+  transform: rotate(45deg);
+  background: var(--border-modal);
+} */
+
+.modal.log .modal.recovery,
+.modal.fogot,
+.modal.password_modal,
+.modal.safety,
+.modal.cancel_bonus,
+.modal.withdrawal,
+.modal.withdrawal_small,
+.modal.withdrawal_midi,
+.modal.welcome,
+.modal.transaction,
+.modal.self-restraint,
+.modal.social,
+.modal.recapcha,
+.modal.recovery_phone,
+.modal.recovery,
+.modal.fogot,
+.modal.kauri {
+  border-radius: 2px;
+  background: var(--background-modal);
+  border: 2px solid var(--border-modal);
+  width: 560px;
+}
+.modal.kauri {
+  width: 711px;
+}
+.modal.recovery {
+  /* height: 325px; */
+  padding: 33px;
+}
+.modal.fogot {
+  height: 250px;
+}
+.modal.safety,
+.modal.welcome {
+  height: 344px;
+}
+.modal.welcome {
+  height: 339px;
+}
+.modal.password_modal {
+  height: 270px;
+}
+.modal.recapcha {
+  height: 329px;
+}
+/* .modal.social {
+  height: 297px;
+} */
+.modal.cancel_bonus {
+  height: 287px;
+}
+.modal.withdrawal {
+  height: 271px;
+}
+.modal.kauri {
+  height: 322px;
+}
+.modal.transaction {
+  height: 266px;
+}
+.modal.withdrawal_small,
+.modal.withdrawal_midi {
+  height: 255px;
+}
+.modal.multi {
+  max-width: calc(100vw - 30px);
+  width: calc(100vw - 30px);
+  margin: 63px 15px auto;
+}
+.modal.light {
+  border-radius: 5px;
+  width: 80vw;
+  max-width: 1024px;
+  height: auto;
+  border: 1px solid var(--border-color-1);
+  min-height: 60vh;
+  box-sizing: border-box;
+  background-color: rgba(18, 23, 39, 0.7);
+}
+.modal.light_flex {
+  width: 1390px;
+  max-width: 1024px;
+  height: auto;
+  border-radius: 20px;
+  background:
+    linear-gradient(rgba(18, 19, 32, 0.8), rgba(18, 19, 32, 0.8)) padding-box,
+    linear-gradient(
+        to top right,
+        rgba(110, 133, 207, 0.5),
+        rgba(110, 133, 207, 0),
+        rgba(110, 133, 207, 0.5)
+      )
+      border-box;
+  border: 1px solid transparent;
+}
+.modal.light_flex > * > * {
+  overflow-x: hidden !important;
+}
+.modal.light_flex > * {
+  min-height: 60vh;
+}
+.overlay.opened .modal {
+  animation-name: open-modal;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  /*transform: scale(1);*/
+}
+.overlay.closed .modal {
+  animation-name: close-modal;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+.overlay.bonus.opened .modal {
+  animation-name: open-modal-bonus;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  /*transform: scale(1);*/
+}
+.overlay.bonus.closed .modal {
+  animation-name: close-modal-bonus;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+.modal.gamepad::before {
+  content: "";
+  display: block;
+  padding-top: 156%;
+}
+.modal.gamepad .container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.flex_container {
+  display: flex;
+  flex-direction: column;
+}
+.flex_container__header {
+  padding: 22px 48px 22px 64px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 18px 18px 0 0;
+  background: #000613;
+}
+.flex_container__header .close {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+.flex_container__body {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.flex_container__body > * {
+  /*top: 34px;*/
+  height: auto !important;
+  /*margin-bottom: -34px;*/
+}
+.flex_container__body > * > * {
+  margin-bottom: 0 !important;
+  /*transform: translateY(17px);*/
+  /*overflow: hidden scroll !important;*/
+  overflow-x: hidden !important;
+}
+.flex_container__content {
+  padding: 0px 110px;
+}
+.content {
+  box-sizing: border-box;
+  height: 100%;
+}
+@keyframes close-overlay {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes open-overlay {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes close-modal {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes open-modal {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes close-modal-bonus {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+@keyframes open-modal-bonus {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (max-width: 1440px) {
+  .modal.search {
+    width: 1140px;
+  }
+}
+@media (max-width: 1400px) {
+  /* .modal.log {
+    width: 413px;
+    height: 637px;
+  } */
+  .modal.privelege {
+    width: 359px;
+    height: 655px;
+  }
+}
+@media (max-width: 1280px) {
+  .modal.log {
+    width: 459px;
+    height: 797px;
+    margin: auto;
+  }
+  .modal.search {
+    width: 920px;
+  }
+}
+@media (max-width: 960px) {
+  .modal.search {
+    width: 100%;
+    border: none;
+  }
+  .modal.log {
+    box-sizing: border-box;
+    width: 460px;
+    height: 797px;
+    padding: 24px;
+  }
+  .modal.gamepad {
+    top: 0px;
+    height: 700px;
+  }
+  .modal.welcome {
+    height: 510px;
+  }
+  .modal.recovery {
+    /* height: 304px; */
+    padding: 20px;
+  }
+  .modal.recovery_phone {
+    height: 260px;
+  }
+  .modal.recapcha {
+    height: 422px;
+  }
+  .modal.safety {
+    height: 373px;
+  }
+  .modal.fogot {
+    height: 234px;
+  }
+  .modal.cancel_bonus {
+    height: 335px;
+  }
+  .modal.recovery,
+  .modal.fogot,
+  .modal.password_modal,
+  .modal.safety,
+  .modal.cancel_bonus,
+  .modal.withdrawal,
+  .modal.withdrawal_small,
+  .modal.withdrawal_midi,
+  .modal.welcome,
+  .modal.transaction,
+  .modal.social,
+  .modal.recapcha,
+  .modal.recovery_phone {
+    width: 320px;
+  }
+  .modal.withdrawal_midi {
+    height: 320px;
+  }
+  .modal.password_modal {
+    height: 250px;
+  }
+  .modal.withdrawal {
+    height: 292px;
+  }
+  .modal.transaction {
+    height: 267px;
+  }
+  .modal.withdrawal_small {
+    height: 241px;
+  }
+}
+@media (max-width: 767px) {
+  .modal.log {
+    width: 328px;
+    height: 790px;
+  }
+  .modal.light {
+    width: calc(100vw - 30px);
+    min-height: calc(100vh - 200px);
+  }
+  .flex_container__content {
+    padding: 55px 0;
+  }
+  .overlay.bonus.opened {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .overlay {
+    overflow-x: hidden;
+  }
+  .overlay.opened.log {
+    padding: 0 16px;
+  }
+  .modal.gamepad {
+    height: 650px;
+  }
+}
+@media (max-width: 380px) {
+  .modal.gamepad {
+    top: 12px;
+    height: 580px;
+  }
+}
+/* @media (max-width: 380px) {
+    .modal.gamepad {
+        top: 12px;
+        height: 520px;
+    }
+}
+@media (min-height: 790px) {
+    .modal.gamepad {
+        top: 32px;
+        height: 700px;
+    }
+}
+@media (min-height: 700px) {
+    .modal.gamepad {
+        top: 0;
+        height: 600px;
+    }
+} */

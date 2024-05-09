@@ -1,0 +1,87 @@
+.gamepad {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.container {
+    margin-top: 30px;
+    margin-bottom: 68%;
+    position: relative;
+    background-image: url("../../images/gamepad/gamepad-stretch.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+.bottom::before {
+    content: "";
+    background-image: url("../../images/gamepad/garilla.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    top: -30%;
+    left: 0;
+    background-position-x: 76%;
+    z-index: 0;
+    background-size: contain
+}
+.top {
+    position: absolute;
+   margin-top: -30px;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding-right: 20.3%;
+    padding-left: 20.3%;
+    padding-top: 10%;
+}
+.bottom img,
+.top img {
+    max-width: 100%;
+}
+.bottom {
+    margin-top: -30%;
+    position: absolute;
+}
+
+@media (max-width: 480px) {
+    .container {
+        /*margin-bottom: 68%;*/
+        margin-right: -18%;
+        margin-left: -18%;
+    }
+}
+@media (min-width: 480px) {
+    .container {
+        margin-bottom: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        margin-bottom: 351px;
+        width: 700px;
+        transform: translateX(-50%);
+        margin-left: 50%;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        margin-bottom: 40%;
+        width: 900px;
+        transform: translateX(-50%);
+        margin-left: 50%;
+    }
+}
+@media (min-width: 1440px) {
+    .container {
+        margin-bottom: calc(39% + 1px);
+    }
+}
+@media (min-width: 1490px) {
+    .container {
+        margin-bottom: calc(38% - 5px);
+    }
+}

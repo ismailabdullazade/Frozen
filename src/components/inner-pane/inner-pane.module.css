@@ -1,0 +1,12 @@
+.content_pane {
+  border-radius: 0;
+}
+.content_pane.margin_top_0 {
+  margin-top: 0;
+}
+
+@media (max-width: 1280px) {
+  .content_pane {
+    border: none;
+  }
+}

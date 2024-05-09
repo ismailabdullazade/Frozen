@@ -1,0 +1,6 @@
+.input input::placeholder {
+    color: var(--white-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+}

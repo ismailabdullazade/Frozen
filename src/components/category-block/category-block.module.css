@@ -1,0 +1,16 @@
+.category_container {
+    width: auto;
+    height: auto;
+    background-color: #0B0A16;
+    margin: 0 24px 20px 24px;
+    padding: 16px;
+    padding-left: 0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+
+}
+.title {
+    color: black;
+}

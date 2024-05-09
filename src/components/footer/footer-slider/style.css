@@ -1,0 +1,33 @@
+.slick-arrow.slick-next::before {
+    content: url("../../../images/footer-slider/arrow-right.png");
+}
+.slick-arrow.slick-prev::before {
+    content: url("../../../images/footer-slider/arrow-left.png");
+}
+.slick-slider .slick-list {
+    top: 5px;
+}
+.slick-prev {
+    /*left: -75px;*/
+}
+.slick-slider.slick-initialized {
+    /*margin-left: 50px;*/
+}
+.slick-slider .slick-track {
+    display: flex;
+    align-items: center;
+}
+.slick-slide {
+    text-align: center;
+}
+@keyframes margin {
+    0% {
+        margin-left: 0;
+    }
+    99% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}

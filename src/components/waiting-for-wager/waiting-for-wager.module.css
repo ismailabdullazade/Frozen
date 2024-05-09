@@ -1,0 +1,18 @@
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper {
+    text-align: center;
+}
+.wrapper img {
+    height: auto;
+    width: 75px;
+}
+.text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}

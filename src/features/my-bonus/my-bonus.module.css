@@ -1,0 +1,128 @@
+.my_bonus {
+  background: #121320;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin: 19px auto;
+  max-width: 1390px;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  min-height: 700px;
+  flex-direction: column;
+}
+.my_bonus.fixedHeight {
+  height: 700px;
+  max-height: 700px;
+}
+
+.fm_border {
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 20px;
+  background: linear-gradient(
+    rgb(110 133 207/30%) 10%,
+    transparent 30%,
+    transparent 70%,
+    rgb(110 133 207/30%) 90%
+  );
+}
+.subpane {
+  margin-bottom: 12px;
+  padding: 7px 12px;
+}
+.my_bonus .menu {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border-radius: 20px 20px 0 0;
+  justify-content: flex-start;
+  scroll-behavior: smooth;
+  scroll-margin-block: center;
+  overflow-x: visible;
+}
+.my_bonus .menu_item {
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s ease opacity;
+  outline: none;
+  scroll-behavior: smooth;
+  scroll-margin-block: center;
+  color: #969cad;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+}
+.my_bonus .menu_item:first-child {
+  padding-left: 32px;
+}
+.my_bonus .menu_item.active {
+  color: #fff;
+  background-color:var(--button-wallet);;
+}
+.my_bonus .tab_content {
+  flex-grow: 1;
+  padding: 0;
+}
+.my_bonus .tab_content > *,
+.my_bonus .tab_content > * > * {
+  height: 100%;
+}
+.scrollLeft,
+.scrollRight {
+  position: sticky;
+  opacity: 0;
+  background-color: #121320;
+  box-shadow: #121320 0 0 10px;
+  z-index: 1;
+}
+@media (max-width: 1400px) {
+  .my_bonus {
+    margin: 45px 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .my_bonus {
+    margin: 21px 0 21px;
+    padding: 0;
+  }
+  .my_bonus .menu {
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    margin: 0 2px;
+  }
+  .my_bonus .menu::-webkit-scrollbar {
+    display: none;
+    position: relative;
+  }
+  .my_bonus .menu_item {
+    padding: 0 25px 0 0;
+  }
+  .scrollLeft,
+  .scrollRight {
+    opacity: 1;
+    top: 0;
+    transition: 0.3s ease-out;
+  }
+  .scrollLeft {
+    left: 0;
+  }
+  .scrollRight {
+    right: 0;
+  }
+  .scrollLeft_end,
+  .scrollRight_end {
+    position: sticky;
+    opacity: 0;
+  }
+}

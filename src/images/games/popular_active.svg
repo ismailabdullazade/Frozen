@@ -1,0 +1,32 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1187_35)">
+        <circle cx="22" cy="18" r="18" fill="#C68C43"/>
+        <mask id="mask0_1187_35" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="36" height="36">
+            <circle cx="22" cy="18" r="18" fill="#1C2436"/>
+        </mask>
+        <g mask="url(#mask0_1187_35)">
+            <g opacity="0.5" filter="url(#filter1_f_1187_35)">
+                <circle cx="22" cy="41" r="11" fill="#FFF6D6"/>
+            </g>
+        </g>
+        <circle cx="22" cy="18" r="15.5" stroke="#835C2C"/>
+    </g>
+    <path d="M26.1615 12.9692C26.404 15.0911 24.6431 16.0646 24.6431 16.0646C24.7196 8.91268 19.6793 9.00005 19.6793 9.00005C20.7257 9.88624 21.9251 13.0566 18.8755 15.0911C18.8372 15.116 18.7861 15.1535 18.7478 15.1784C14.8305 17.8994 15.1495 24.8767 19.3986 26C18.4288 24.4772 18.5309 22.2056 20.2153 21.0323C20.2408 21.0198 20.2663 20.9949 20.2918 20.9824C22.0145 19.8341 21.3254 18.0367 20.7384 17.55C20.7384 17.55 23.584 17.5 23.5329 21.5316C23.5329 21.5316 24.5282 20.9824 24.3879 19.7842C24.3879 19.7842 25.4469 21.931 25.4214 23.7783C25.4087 24.5646 25.1917 25.2885 24.8217 25.8877C26.6974 24.7643 27.9607 23.1167 27.999 20.5955C28.05 17.3253 26.1615 12.9692 26.1615 12.9692Z" stroke="white" stroke-linejoin="round"/>
+    <defs>
+        <filter id="filter0_d_1187_35" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="2"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1187_35"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1187_35" result="shape"/>
+        </filter>
+        <filter id="filter1_f_1187_35" x="2" y="21" width="40" height="40" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="4.5" result="effect1_foregroundBlur_1187_35"/>
+        </filter>
+    </defs>
+</svg>

@@ -1,0 +1,114 @@
+.pagination {
+  margin-top: 52px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.pagination .more_games {
+  text-align: center;
+}
+.pagination .pages {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.pagination .navigate_button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.pagination .navigate_button.prev {
+  margin: 0 10px;
+  position: relative;
+}
+.navigate_button.prev svg {
+  z-index: 5;
+}
+.navigate_button.next svg {
+  z-index: 5;
+}
+.prev:before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: url("../../images/back-arrow-left.svg");
+  left: -14px;
+}
+.pagination .navigate_button.next {
+  margin: 0 10px;
+  position: relative;
+  transition: 0.3s;
+}
+.pagination .navigate_button.prev:hover,
+.pagination .navigate_button.next:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.pagination .navigate_button.prev:active,
+.pagination .navigate_button.next:active {
+  opacity: 0.5;
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+.next:before {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: url("../../images/back-arrow-right.svg");
+  right: -14px;
+}
+.pagination .navigate_button > *:first-child {
+}
+.pagination .numeric_pages {
+  display: flex;
+  margin: auto;
+}
+.pagination .page {
+  transition: 0.2s ease background-color;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 12px 15px;
+}
+.pagination .page.dots {
+  cursor: default;
+}
+.pagination .page:not(.dots):hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.pagination .page.current {
+  color: var(--link-color);
+}
+.pagination.wallet .page.current {
+  color: var(--text-color-link);
+}
+@media (max-width: 960px) {
+  .pagination .pages {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .pagination .numeric_pages {
+    display: flex;
+    width: auto;
+  }
+}
+
+@media (min-width: 620px) {
+  .pagination .page {
+    margin: 0 7px;
+  }
+  /* .pagination .navigate_button.prev {
+        margin-right: 48px;
+    }
+    .pagination .navigate_button.next {
+        margin-left: 48px;
+    } */
+  /* .pagination .navigate_button > *:first-child {
+        margin-right: 30px;
+    } */
+}

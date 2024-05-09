@@ -1,0 +1,64 @@
+.ranks-swiper {
+    height: 562px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper {
+    /*width: 400px !important;*/
+}
+
+.ranks-swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 282px;
+    height: 397px;
+}
+.ranks-swiper .swiper-slide,
+.ranks-swiper .swiper-slide > div {
+    height: 100%;
+}
+.ranks-swiper .swiper-slide img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+.ranks-swiper .swiper-button-prev,
+.ranks-swiper .swiper-button-next {
+    width: 58px;
+    height: 77px;
+    background: url("./images/bonuses/arrow-left.svg") no-repeat center / cover;
+}
+.ranks-swiper .swiper-button-next {
+    background: url("./images/bonuses/arrow-right.svg") no-repeat center / cover;
+}
+.ranks-swiper .swiper-button-prev:after,
+.ranks-swiper .swiper-button-next:after {
+    display: none;
+}
+/*.ranks-swiper .swiper-slide {*/
+/*    opacity: 0;*/
+/*}*/
+.ranks-swiper .swiper-slide-active.swiper-slide-visible,
+.ranks-swiper .swiper-slide-next.swiper-slide-visible,
+.ranks-swiper .swiper-slide-prev.swiper-slide-visible {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1439px){
+    .ranks-swiper {height: 438px;}
+    .ranks-swiper .swiper-button-prev, .ranks-swiper .swiper-button-next {
+        width: 36px;
+        height: 48px;
+    }
+}
+@media screen and (max-width: 1280px){
+    .ranks-swiper {
+        height: auto;
+        margin: 24px auto;
+    }
+    .ranks-swiper .swiper-slide img {
+        margin: 0 auto;
+    }
+}

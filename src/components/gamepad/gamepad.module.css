@@ -1,0 +1,57 @@
+.gamepad {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    position: relative;
+}
+.gamepad img.background {
+    height: 100%;
+    width: 410px;
+    margin-left: -50px;
+}
+.content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 70%;
+    margin-left: -7%;
+    transform: translateX(-50%);
+}
+
+@media (min-width: 350px) {
+    .gamepad img.background {
+        width: 136%;
+        margin: 0 -18%;
+    }
+    .content {
+        width: 75%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 620px) {
+    .content {
+        width: 70%;
+    }
+    .gamepad img.background {
+        width: 120%;
+        margin: 0 -10%;
+    }
+}
+
+@media (min-width: 800px) {
+    .gamepad img.background {
+        max-width: 100%;
+        width: auto;
+        margin: 0;
+    }
+    .content {
+        top: 125px;
+        width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}

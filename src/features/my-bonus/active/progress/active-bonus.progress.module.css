@@ -1,0 +1,88 @@
+.detail__info {
+}
+.detail__info.without_wager {
+}
+ul.detail__info {
+}
+.detail__progress {
+}
+.detail__progressTitle {
+  color:  #FFF;
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.detail__progressContainer {
+  margin: 0 0 12px;
+  position: relative;
+}
+.detail__progressWrapper {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #FA00FF, #ffd312 100%);
+  height: 44px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+.detail__progressLight {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 12px;
+  height: 44px;
+  background: #fec202;
+  filter: blur(15px);
+  border-radius: 10px;
+  transition: 0.2s ease-in left;
+}
+.detail__progressFill {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  min-width: 9px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  z-index: 5;
+  transition: 0.2s ease-in width;
+  background: linear-gradient(90deg, #FA00FF, #ffd312 100%);
+}
+.detail__progressOverlay {
+  position: relative;
+  z-index: 0;
+  left: -17px;
+}
+.detail__progressBar {
+  width: 100%;
+}
+.detail__progressCaption {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  overflow: hidden;
+  color: #484658;
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+}
+.detail__left {
+  overflow: hidden;
+  color:#FFF;
+  text-align: right;
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}

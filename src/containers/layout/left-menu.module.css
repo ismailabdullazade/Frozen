@@ -1,0 +1,198 @@
+.menu_left {
+    /*background: var(--background-modal);*/
+    position: fixed;
+    top: 102px;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    padding: 24px 0;
+    /*clipPath: polygon(91% 0%, 100% 2%, 100% 98%, 91% 100%, 0 100%, 0 0);*/
+    /*clip-path: polygon(0 0, 86% 0, 93% 2%, 93% 30%, 100% 33%, 100% 67%, 93% 70%, 93% 98%, 82% 100%, 0 100%);*/
+}
+/*.menu_left_hide {*/
+    /*width: 84px;*/
+    /*background: url("../../images/games/sb_bg_hide.svg") no-repeat left top / 100% auto;*/
+    /*clip-path: polygon(0 0, 85% 0, 93% 1%, 93% 29%, 100% 31%, 100% 68%, 93% 70%, 93% 99%, 82% 100%, 0 100%);*/
+/*}*/
+/*.menu_left_open {*/
+/*    width: 212px;*/
+/*}*/
+.menu_left:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 212px;
+    background: var(--background-modal);
+    z-index: -1;
+    /*clip-path: polygon(0 0, 86% 0, 93% 2%, 93% 30%, 100% 33%, 100% 67%, 93% 70%, 93% 98%, 82% 100%, 0 100%);*/
+}
+.menu_left.menu_left_hide:before {
+    width: 84px;
+    /*clip-path: polygon(0 0, 85% 0, 93% 1%, 93% 29%, 100% 31%, 100% 68%, 93% 70%, 93% 99%, 82% 100%, 0 100%);*/
+}
+.sb_blocks {
+    display: flex;
+    height: 100%;
+    width: 94%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item {
+    position: relative;
+    display: flex;
+    width: 212px;
+    box-sizing: border-box;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 32px 0 16px;
+    color: #484658;
+    /*transition: 0.3s;*/
+}
+.block_small .item {width: 84px;}
+.block_small .child_block_abs .item {width: 200px;}
+.menu_left_scroll_block {
+    overflow-y: auto;
+}
+.menu_left_hide .item {
+    padding: 0 18px 0 25px;
+}
+.item.active {
+    color: #d9d9d9;
+}
+.item:hover {
+    background: #151424;
+    color: #7A7792;
+}
+.item:hover svg path {fill: #7A7792;}
+.item.active svg path {fill: var(--link-color);}
+
+.item.active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: url("../../images/games/sb_item_active_line.svg") no-repeat 0 center;
+}
+
+.item_text {
+    padding-left: 10px;
+}
+.item_dd_btn {
+    margin-bottom: 0;
+    background: url("../../images/games/arrow_down_grey.svg") no-repeat right 16px center;
+}
+.item_dd_btn.item_dd_btn_up {
+    background: url("../../images/games/arrow_up_grey.svg") no-repeat right 16px center;
+}
+.item_dd_btn:hover {
+    margin-bottom: 0;
+    background: #151424 url("../../images/games/arrow_down_grey.svg") no-repeat right 16px center;
+}
+.item_dd_btn.item_dd_btn_up:hover {
+    background: #151424 url("../../images/games/arrow_up_grey.svg") no-repeat right 16px center;
+}
+.item_dd_btn.item_dd_btn_arrow_hide {
+    background: #151424;
+}
+.parent_block {
+    position: relative;
+    width: 212px;
+}
+.block_small .parent_block {
+    width: 84px;
+}
+.child_block {
+    background: #151424;
+    max-height: 0;
+    overflow: hidden;
+    /*transition: 0.3s;*/
+}
+.child_block_open {
+    max-height: 400px;
+}
+
+.child_block_abs {
+    position: absolute;
+    width: 200px;
+    left: 90px;
+    min-height: 220px;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.parent_block_hide:hover .child_block_abs {
+    opacity: 1;
+    visibility: visible;
+}
+
+.border_line {
+    width: 100%;
+    max-width: 212px;
+    height: 4px;
+    margin: 32px 0;
+    background: url("../../images/games/sb_border_line.svg") no-repeat left center;
+}
+
+.menu_left_hide .border_line {
+    padding: 0 8px;
+    max-width: 84px;
+    background: url("../../images/games/sb_border_line.svg") no-repeat left center / 78% auto;
+}
+.sb_soc_wrap {
+    padding: 0 32px 0 16px;
+}
+
+.social_link_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding-left: 14px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+}
+.menu_left_hide .social_link_buttons {
+    flex-direction: column;
+}
+.social_link_buttons img {
+    width: 20px;
+    height: 20px;
+
+}
+.social_link_buttons div {
+    background: url("../../images/footer-icons/paralelepiped.svg") no-repeat center / auto 135%;
+    width: 48px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_us_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2px;
+    gap: 16px;
+
+}
+.about_us_container a {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+.about_us_container a:hover {
+    filter: drop-shadow(5px 5px 10px rgba(236, 219, 248, 0.6));
+    transition: 0.3s;
+}
+.container_footer_support p:nth-child(odd) {
+    margin-top: -7px;
+    padding-bottom: 13px;
+    color: var(--link-color);
+}

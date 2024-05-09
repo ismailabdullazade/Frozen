@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.text,
+.container_day span {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.container_day {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 140px;
+  margin: 0 auto;
+}
+.container_day span:nth-child(2) {
+  margin-left: 10px;
+}
+.container_day span {
+  font-weight: 400;
+}
+.container {
+  margin-top: 25px;
+  text-align: center;
+}
+.container_dataTime {
+  color: #fff;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 150px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  z-index: 1;
+  margin: 0 auto;
+}
+.container_dataTime span {
+  position: relative;
+  width: 44px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+}
+.container_dataTime span::before {
+  content: "";
+  background-image: url("../../../../images/bonuses/timer.png");
+  background-size: cover;
+  position: absolute;
+  top: -8px;
+  right: 5px;
+  width: 44px;
+  height: 35px;
+  z-index: -1;
+}

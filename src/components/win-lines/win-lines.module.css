@@ -1,0 +1,246 @@
+.winner_slider {
+  min-height: 77px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 24px auto 0px auto;
+  max-width: 1390px;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  background-image: url("./../../images/win_line_background.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: scrollBackground 70s linear infinite;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+.winner_slider::before,
+.winner_slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  z-index: 2;
+}
+
+.winner_slider::before {
+  left: 0;
+  background: var(--win_line_bg_left);
+}
+
+.winner_slider::after {
+  right: 0;
+  background: var(--win_line_bg_right);
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  90% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
+
+.slide_animate {
+  animation: slideIn 0.3s cubic-bezier(0.22, 0.61, 0.1, 1);
+}
+
+@media screen and (max-width: 1400px) {
+  .winner_slider {
+    padding-left: 0;
+  }
+}
+
+.winner_container {
+  width: 100%;
+  max-width: 1385px;
+  gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  animation: scroll 5s linear infinite;
+  transform-origin: left;
+  animation-timing-function: linear;
+}
+
+.winner_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--background-input);
+  position: relative;
+  overflow: hidden;
+  transition:
+    background 0.1s ease-in-out,
+    transform 0.1s ease-in-out;
+  box-sizing: border-box;
+  margin-top: 10px;
+  cursor: pointer;
+  user-select: none;
+  clip-path: polygon(
+    calc(100% - 14px) 0,
+    100% 50%,
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 0
+  );
+}
+.winner_container > div > div > div:hover .winner_item {
+  background: linear-gradient(90deg, #223061 0%, rgba(32, 49, 99, 0.7) 147.9%);
+  transform: translateY(-13px);
+  cursor: pointer;
+}
+
+@media (max-width: 1850px) {
+  .winner_slider {
+    margin: 24px 50px 20px 240px;
+  }
+}
+@media (max-width: 1680px) {
+  .winner_slider.close {
+    margin: 24px 110px 20px auto;
+  }
+}
+@media (max-width: 1580px) {
+  .winner_slider.close {
+    margin: 24px 110px 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .winner_slider {
+    margin: 24px 50px 10px 110px;
+  }
+}
+@media (max-width: 960px) {
+  .winner_slider {
+    margin: 24px 40px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .winner_slider {
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .winner_item:hover {
+    margin-top: 10px;
+    padding-bottom: 13px;
+    background: linear-gradient(90deg, #101422 0%, rgba(26, 35, 62, 0) 147.9%);
+  }
+}
+
+.winner_item img {
+  width: 75px;
+  height: 75px;
+  background-color: #4b2700;
+  clip-path: polygon(
+    calc(100% - 10px) 0,
+    100% 50%,
+    calc(100% - 10px) 100%,
+    0 100%,
+    0 0
+  );
+}
+.winner_item::before {
+  content: "";
+  position: absolute;
+  background-image: url("./../../images/arrow_win_line.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+  height: 75px;
+  width: 28px;
+}
+
+.winner_item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.winner_item__info p {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.winner_item__info span:first-of-type {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.55;
+  width: 133px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.winner_item__info span:last-of-type {
+  color: var(--white-text-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 10px;
+  position: relative;
+}
+
+.winner_item__info span:last-of-type::before {
+  content: "+";
+  color: var(--plus_win_line);
+  position: absolute;
+  top: 0;
+  left: -10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,40 @@
+.favorite {
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 35%;
+  height: 73%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.favorite img {
+  user-select: none;
+  position: absolute;
+  width: 46%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-tap-highlight-color: transparent;
+  transition: .3s ease;
+}
+.favorite:hover img { 
+  width: 70%;
+  transition: .3s ease;
+}
+.visible .hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+@media (min-width: 768px) {
+  .favorite:hover .hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}

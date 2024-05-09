@@ -1,0 +1,99 @@
+.modal_twofa {
+  padding: 60px;
+  width: 710px;
+  height: 344px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.modal_twofa > img {
+  width: 397px;
+  height: 192px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: -1;
+}
+.modal_twofa input {
+  width: 289px;
+  margin-bottom: 25px;
+}
+.modal_twofa.modal_twofa__verification > img {
+  top: 20px;
+  right: 40px;
+  width: 373px;
+  height: 192px;
+}
+.modal_twofa__title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  background: linear-gradient(269deg, #C68C43 23.48%, #E4A85B 100.52%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.modal_twofa__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 25px 0;
+  width: 373px;
+}
+.modal_twofa__btn button {
+  width: 159px;
+  height: 30px;
+}
+.modal_twofa__btn button:first-child {
+  margin-right: 20px;
+}
+
+
+@media (max-width: 960px) {
+  .modal_twofa {
+    padding: 40px;
+    width: 321px;
+    height: 373px;
+  }
+  .modal_twofa__text {
+    width: 241px;
+  }
+  .modal_twofa__text {
+    font-size: 15px;
+  }
+  .modal_twofa input {
+    width: 203px;
+  }
+  .modal_twofa > img {
+    width: 128px;
+    height: 139px;
+    top: 21px;
+    right: 28px;
+  }
+  .modal_twofa.modal_twofa__verification > img {
+    width: 286px;
+    height: 147px;
+    top: 20px;
+    right: 16px;
+  }
+  .modal_twofa__title {
+    font-size: 17px;
+  }
+  .modal_twofa__btn button:first-child {
+    margin-bottom: 15px;
+  }
+  .modal_twofa__btn button,
+  .modal_twofa__btn button div  {
+    width: 241px;
+    height: 38px;
+  }
+  .modal_twofa__btn {
+    display: flex;
+    flex-direction: column;
+  }
+}

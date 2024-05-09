@@ -1,0 +1,148 @@
+.info_title,
+.info_block,
+.info_block__text,
+.info_block__active {
+  font-style: normal;
+  line-height: normal;
+  font-weight: 800;
+}
+.info_title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  width: 310px;
+  margin: 0 0 32px 6px;
+}
+.info_title__color {
+  color: var(--text-color-link);
+  font-size: 24px;
+}
+.description.wallet .info_title__color,
+.description.wallet .info_block__active {
+  color: var(--text-color-link);
+}
+.description.available_bonuses .info_block__active,
+.description.available_bonuses .info_title__color {
+  color: var(--text-color-link);
+}
+.description.wallet .info_block__text::before {
+  display: none;
+}
+.description.active_bonus {
+  padding-left: 13px;
+}
+.description.available_bonuses .info_block__text::before,
+.description.active_bonus .info_block__text::before {
+  display: block;
+  left: -13px;
+  top: 3px;
+}
+.description.wallet .info_block__text {
+  margin: 0 0 8px 0;
+}
+.description.wallet .info_title {
+  margin: 0 0 24px 0;
+  font-size: 20px;
+  text-align: start;
+}
+.description.wallet.active_bonus .info_title {
+  margin: 0 0 20px 0;
+}
+.info_block {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 500px;
+}
+.info_block__text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 8px 12px;
+  position: relative;
+  /* width: 378px; */
+  width: 100%;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.info_block__text::before {
+  content: "";
+  width: 7px;
+  height: 8px;
+  background: url("../../../images/violet-romb.svg");
+  position: absolute;
+  top: 6px;
+  left: -10px;
+}
+.info_block__active {
+  color: #ddbc25;
+  font-size: 12px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1400px) {
+  .description.wallet .info_title {
+    width: 294px;
+  }
+}
+@media (max-width: 1200px) {
+  .description.available_bonuses .info_block__text::before {
+    background: url("../../../images/violet-romb.svg");
+  }
+  .description.available_bonuses .info_block__active,
+  .description.available_bonuses .info_title__color {
+    color: var(--text-color-link);
+  }
+}
+/* @media (max-width: 960px) {
+  .info_block__text {
+    width: 100%;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+  .description.active_bonus .info_title {
+    font-size: 17px;
+    font-weight: 800;
+  }
+  .description.wallet .info_block__text::before {
+    display: none;
+    left: -13px;
+    background: url("../../../images/violet-romb.svg");
+  }
+  .description.wallet .info_block__text {
+    margin-left: 0;
+  }
+} */
+
+@media (max-width: 767px) {
+  .description.kauri .info_block {
+    display: flex;
+  }
+  .description.available_bonuses .info_block__text {
+    margin-left: 0;
+  }
+  .info_block__text {
+    color: #443f10;
+    font-weight: 800;
+  }
+  .info_block__text::before {
+    background: url("../../../images/violet-romb.svg");
+  }
+  .info_title {
+    color: #443f10;
+    margin: 0 auto 18px;
+  }
+  .description.wallet .info_title,
+  .description.wallet .info_block__text {
+    color: #ffffff;
+  }
+  .description.wallet .info_title {
+    width: 320px;
+  }
+}

@@ -1,0 +1,166 @@
+.box {
+    composes: box from "./style.module.css";
+}
+.wrapper {
+    composes: wrapper from "./style.module.css";
+}
+.wrapper.without_list {
+    position: relative;
+}
+.wrapper.without_list .toggler {
+    transition: .2s ease-out transform;
+    position: absolute;
+    right: 12px;
+    bottom: 17px;
+}
+.wrapper.without_list .toggler.opened {
+    transform: rotate(180deg);
+}
+.no_matches {
+    padding: 20px 0;
+    text-align: center;
+}
+.label {
+    composes: label from "./style.module.css";
+}
+.wrapper.error {
+    background-image: none;
+    background-color: transparent;
+}
+.item {
+    composes: item from "./style.module.css";
+    padding: 11px 18px 9px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.wrapper.error .item {
+    border-color: var(--error-color);
+}
+.select {}
+.select__toggler {
+    position: absolute;
+    right: 16px;
+    height: auto;
+    transform: rotate(0deg);
+    top: calc(50% - 3px);
+    transition: .2s ease-in transform;
+}
+.select__toggler.opened {
+    transform: rotate(180deg);
+}
+.select__search {
+    position: relative;
+}
+.select__search + div {
+    margin-top: 5px;
+}
+.select__search + div > *:first-child {
+    margin: 0 !important;
+}
+.select__search + div > *:first-child::-webkit-scrollbar {
+    display: none;
+}
+.select__search + div > *:last-child {
+    width: 10px !important;
+    border-radius: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.select__search + div > *:last-child > * {
+    box-sizing: border-box;
+    margin: 0 auto !important;
+    border-radius: 1px !important;
+}
+.select__searchIcon {
+    composes: select__toggler;
+    top: 0;
+}
+.select__searchInput {
+    outline: none;
+    box-shadow: none;
+    height: 32px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: var(--black-color);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-text-color);
+    padding: 7px 14px 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.select__searchInput::placeholder {
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-text-color);
+}
+
+.select__container {
+    overflow: hidden;
+    position: absolute;
+    outline: none;
+    transition:visibility 0.2s linear,opacity 0.2s linear;
+    opacity: 1;
+    visibility: visible;
+    min-width: 100px;
+    z-index: 9999;
+    composes: wrapper from "./style.module.css";
+    background-color: var(--background-color-4);
+    border: 1px solid var(--border-color-2);
+    padding: 5px;
+    border-radius: 6px;
+    margin-top: 1px;
+}
+.isSearchable .select__container {
+    padding: 5px 5px 41px;
+}
+.select__container.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.isSearchable .select__list {
+    /*border-radius: 6px;*/
+    /*background-color: var(--background-color-17);*/
+    margin-top: 5px;
+}
+.select__container.scrollable .option {
+    margin-right: 18px;
+    margin-left: 8px;
+}
+.select__listOption {
+    color: var(--white-text-color);
+    cursor: pointer;
+    position: relative;
+    padding: 7px 14px 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;;
+    transition: .3s ease background-color;
+    background-color: transparent;
+}
+.isSearchable .select__listOption {
+    margin-right: 17px;
+}
+.select__listOption:hover {
+    /*filter: brightness(1.5);*/
+    background-color: var(--background-color-23);
+}
+.select__listOption:active {
+    /*filter: brightness(0.8);*/
+}
+
+@media (max-width: 767px) {
+    .item {
+        padding: 11px 26px 9px 15px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

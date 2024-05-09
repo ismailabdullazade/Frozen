@@ -1,0 +1,17 @@
+.content_pane {
+    /*background: var(--background-color-8);*/
+    /* backdrop-filter: blur(5.5px); */
+}
+.content_pane.margin_top_0 {
+    margin-top: 0;
+    width: 100%;
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 790px) {
+    .content_pane.content_pane.margin_top_0 {
+        margin-bottom: 0
+    }
+}

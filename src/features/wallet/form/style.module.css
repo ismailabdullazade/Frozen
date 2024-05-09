@@ -1,0 +1,1149 @@
+.inner_pane_container {
+  padding-top: 0;
+  /* margin-left: 35px; */
+  margin-left: 0;
+  width: 556px;
+}
+.inner_pane.inner_pane.inner_pane {
+  padding: 0;
+  /* margin-top: -180px; */
+  margin-top: 0;
+  padding-left: 24px;
+  width: 100%;
+}
+.withdrawal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 844px;
+  /* margin-top: 153px; */
+  margin-top: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 196px;
+  max-width: 557px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wrapper.wrapper_withdrawal__kauri,
+.wrapper.wrapper_dep {
+  /* height: 700px; */
+  height: 100%;
+}
+.detail {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.detail_withdrawal {
+  /* width: 357px; */
+  width: 100%;
+}
+.withdrawal_form input {
+  /* width: 527px; */
+  width: 100%;
+}
+.detail.kauri {
+  justify-content: flex-start;
+}
+.telegram_info {
+  margin: 10px 10px 0;
+  text-align: left;
+}
+.telegram_pay {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  line-height: 17px;
+  color: var(--white-text-color);
+  mix-blend-mode: normal;
+  opacity: 0.2;
+}
+.requisites {
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+.payment_crypto .input {
+  /* margin: 0 auto; */
+}
+.payment_crypto {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+}
+.input_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.input_title img {
+  width: 24px;
+  height: 100%;
+}
+.title_modal__kauri {
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.requisites > * {
+  /* margin: 8px auto 0; */
+  /* min-width: 527px; */
+  /* margin: 0; */
+  /* margin-top: 8px; */
+  width: 100%;
+}
+.payment_crypto label,
+.requisites label,
+.withdrawal_requisites label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white-text-color);
+  margin: 0 0 12px 0;
+}
+.withdrawal_form.requisites {
+  padding-top: 0px;
+}
+.requisites .inputs input {
+  width: 100%;
+  /* max-width: 527px; */
+}
+.info_tooltip_container {
+  position: relative;
+}
+.info_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.info {
+  margin-left: 14px;
+  cursor: pointer;
+}
+.tooltip {
+  height: 110px;
+  width: 442px;
+  bottom: 56px;
+  left: -195px;
+  box-sizing: border-box;
+}
+.inputs {
+  display: flex;
+  margin-top: 7px;
+}
+.inputs > *:last-child {
+  flex-grow: 1;
+}
+.inputs input {
+  min-height: 16px;
+}
+.inputs > div > div > div:not(:last-child) {
+  width: 353px;
+  right: -61px;
+  top: 0px;
+  height: 40px;
+}
+.input_icon {
+  position: relative;
+  pointer-events: initial;
+}
+.crypto_address {
+  width: 294px;
+}
+.qr_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 294px;
+}
+.requisites_text {
+  padding-top: 35px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  text-align: center;
+  color: rgb(255, 255, 255, 0.3);
+}
+.crypto_address input {
+  padding-left: 16px;
+  padding-right: 56px;
+}
+.crypto_address > div > div {
+  z-index: 999;
+  width: 17px;
+  height: 21px;
+  right: -43px;
+}
+/* .btn {
+  margin-top: 88px;
+} */
+.btn button {
+  width: 527px;
+}
+.btn button:first-child {
+  margin-right: 16px;
+}
+.country_code input {
+  padding-left: 18px;
+}
+.country_code {
+  width: 95px;
+  min-width: 95px;
+}
+.number,
+.country_code {
+  float: left;
+}
+.inputs::after {
+  content: "";
+  /*width: 100%;*/
+  display: block;
+  clear: both;
+}
+.amount {
+  margin: 12px 0 0;
+  /* max-width: 527px; */
+  width: 100%;
+}
+.amount input {
+  min-height: 23px;
+  padding: 10px 35px 9px 19px;
+}
+.currencies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.requisites div .currencies.currencies input {
+  /* width: 527px; */
+  width: 100%;
+}
+.currencies > div > div:first-child input {
+  height: 14px;
+  width: 251px;
+}
+.outputCurrencyName {
+  display: flex;
+  font-weight: 600;
+  font-size: 16px;
+  height: 16px;
+}
+.currencies input {
+  border: none;
+  min-height: 13px;
+  height: 13px;
+  padding-right: 82px;
+}
+.currencies div {
+  margin-top: 16px;
+  width: 100%;
+  position: relative;
+}
+.currenciesRateTitle {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--grey-color-2);
+}
+.currency_sign {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  top: 2px;
+  position: relative;
+}
+.deposit_limits {
+  margin: 12px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+}
+.deposit_limits > div:last-child {
+  margin-top: 12px;
+}
+.card_deposit {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 591px;
+}
+.alt.withdrawal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.title_selectBonus {
+  font-size: 14px;
+  color: var(--white-text-color);
+  font-weight: 600;
+  margin: 24px 0 16px;
+}
+.bonus__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 57px;
+}
+.bonus__timer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.bonus__notice {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--red);
+  width: 527px;
+  /* text-align: center; */
+  padding: 0 0 5px;
+  text-align: left;
+}
+.bonus__button {
+  width: 495px;
+  height: 42px;
+  font-size: 14px;
+  /* margin-left: 13px; */
+  margin-left: 0;
+  width: 100%;
+}
+.alt.card_deposit {
+  justify-content: space-between;
+  max-width: 100%;
+  width: 527px;
+  box-sizing: border-box;
+  height: 100%;
+}
+.alt.withdrawal .info_block {
+  flex-direction: column;
+  /* width: 315px; */
+  width: 100%;
+  margin: 0;
+}
+.alt_title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+.alt img.card_img {
+  margin: auto;
+  max-width: 382px;
+}
+.alt .info_block {
+  flex: 1;
+  margin-top: 74px;
+  display: flex;
+}
+.alt .withdrawal_requisites {
+  margin: 0 auto;
+  /* min-width: 395px; */
+  width: 100%;
+  text-align: left;
+  box-sizing: border-box;
+}
+.alt .withdrawal_requisites__card_expire {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.withdrawal_requisites__card_expire .text:first-of-type {
+  padding: 0 16px 0 0;
+}
+.alt .withdrawal_requisites__card_expire .text {
+  font-weight: 600;
+  margin: 0 0 7px 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--white-text-color);
+}
+.alt .withdrawal_requisites__card_expire .input input {
+  padding: 11px 15px;
+  width: 100px;
+  text-align: center;
+  height: 42px;
+}
+.slash {
+  margin: 0 20px;
+}
+.alt .withdrawal_requisites__card_holder {
+  margin-top: 20px;
+}
+.alt .withdrawal_requisites .title {
+  color: rgb(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 7px 19px;
+}
+.alt .withdrawal_requisites input {
+  height: 42px;
+  /* width: 527px; */
+  width: 100%;
+}
+.qr_code {
+  width: 170px;
+  height: 170px;
+}
+.alt .qr_code {
+  /*display: flex;*/
+  /*justify-content: flex-end;*/
+  margin: 0 auto;
+}
+input:focus-visible {
+  outline: none;
+}
+.no_bonus_text {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 59px;
+}
+.qr_code img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.74);
+  border: 1px solid #767876;
+}
+.alt .qr_description {
+  display: flex;
+  padding-top: 90px;
+  box-sizing: border-box;
+  white-space: pre-line;
+  text-align: left;
+  padding-left: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white-text-color);
+}
+.alt.withdrawal .btn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bonus_alert {
+  white-space: pre-line;
+  text-align: center;
+  color: var(--text-color-login);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 20px;
+  width: 527px;
+  display: inline;
+  margin-bottom: 10px;
+}
+.btn .bonus_alert a {
+  color: var(--link-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+.outputCurrencyName > span {
+  color: #414a65;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  right: 0;
+  bottom: 33px;
+}
+.alt .btn {
+  text-align: center;
+}
+.alt button {
+  margin-top: 10px;
+  width: 527px;
+  height: 42px;
+}
+.commission {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: whi var(--white-text-color);
+}
+.pointer {
+  cursor: pointer;
+}
+.modal {
+  box-sizing: border-box;
+  width: 100%;
+}
+.error {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: auto;
+  overflow: hidden;
+  padding: 60px;
+  justify-content: space-between;
+}
+.error_header .error_title {
+  font-size: 20px;
+  color: var(--link-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+.close_modal {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 999;
+}
+.close_modal:hover {
+  animation: 0.3s close;
+}
+.error .error_text {
+  flex: 1;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  width: 550px;
+  margin: 30px 0;
+  align-items: flex-start;
+}
+.error .btn_container {
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: flex-start;
+  width: 159px;
+  height: 38px;
+}
+.error .btn_container button,
+.error .btn_container button > div {
+  width: 159px;
+}
+.error .error_btn {
+  min-width: 159px;
+  height: 30px;
+}
+.btn_container button div {
+  width: 261px;
+}
+
+.gold {
+  color: var(--link-color);
+}
+.available_block__text {
+  color: #414a65;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 5px 0;
+}
+.activation {
+  width: 438px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards_wraper {
+  display: flex;
+  gap: 20px;
+  width: 570px;
+  height: 214px;
+  background: var(--background-switch);
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
+}
+.bonus_card__active {
+  transform: scale(1.1);
+}
+.pagination {
+  width: 100%;
+  display: flex;
+  background: var(--background-switch);
+  padding: 0 0 16px;
+  justify-content: center;
+  align-items: center;
+}
+.pagination .page,
+.pagination .active {
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 7px;
+}
+.pagination .page {
+  width: 5px;
+  height: 5px;
+  background-color: #58698f;
+}
+.pagination .active {
+  width: 10px;
+  height: 10px;
+  background-color: #c68c43;
+}
+.divider {
+  background: rgba(110, 133, 207, 0.1);
+  width: 1px;
+}
+.description_block {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 527px;
+  height: 215px;
+  box-sizing: border-box;
+}
+.card_description__wraper {
+  margin: 0 0 66px;
+  transition: 0.5s ease;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: -1000px;
+  right: -1000px;
+  transition: 0.5s ease;
+}
+.detail_blok__bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 527px; */
+  width: 100%;
+  text-align: left;
+}
+.withdrawal_block {
+  display: inline-flex;
+  align-items: center;
+  width: 294px;
+}
+.placeholder {
+  width: 162px;
+  height: 201px;
+  background-image: url("./../../../images/wallet/placeholder_bonus.svg");
+}
+.description_block__title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+.bonus_card {
+  width: 148px;
+  height: 182px;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+  pointer-events: auto;
+}
+.bonus_card:hover,
+.bonus_card__active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.bonus_card__kauri {
+  width: 160px;
+  height: 200px;
+}
+.arrow_left,
+.arrow_right {
+  width: 15px;
+  height: 20px;
+  cursor: pointer;
+}
+.arrow_left {
+  transform: rotateZ(180deg);
+  margin-right: 15px;
+}
+.arrow_right {
+  margin-left: 3px;
+}
+.arrow_left:hover,
+.arrow_right:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.arrow_left:active {
+  transform: rotateZ(180deg) scale(0.9);
+  transition: 0.2s;
+}
+.arrow_right:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
+.btn_block {
+  margin-top: 100px;
+}
+.btn_block button {
+  width: 122px;
+}
+.btn_block button:first-child {
+  margin-right: 20px;
+}
+@media (max-width: 1440px) {
+  .inner_pane_container {
+    width: 427px;
+    margin-left: 0;
+  }
+  .requisites > * {
+    margin: 8px auto 0;
+    /* min-width: 400px; */
+  }
+  .detail_blok__bonus .alt {
+    border-right: none;
+    height: 350px;
+    padding: 0 0 10px;
+    max-width: 100%;
+  }
+  .detail_blok__bonus {
+    align-items: flex-start;
+  }
+  .cards_wraper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 16px 40px;
+    width: 400px;
+  }
+  .cards_wraper > div:first-child,
+  .cards_wraper > div:first-child > img,
+  .placeholder {
+    width: 145px;
+    height: 181px;
+  }
+  .placeholder {
+    background-size: cover;
+  }
+  .pagination {
+    /* width: 400px; */
+    width: 100%;
+  }
+  .description_block {
+    height: 150px;
+    /* width: 400px; */
+    width: 100%;
+  }
+  .description_block > div > div:last-child,
+  .kauri .amount,
+  .kauri .amount input,
+  .requisites div .currencies.currencies input {
+    /* width: 400px; */
+    width: 100%;
+  }
+  .description_block > div > div:last-child > span {
+    text-align: start;
+  }
+  .bonus__button {
+    /* width: 380px; */
+    width: 100%;
+  }
+  .bonus__notice {
+    font-size: 14px;
+    width: 380px;
+  }
+  .currencies > div > div:first-child {
+    width: 315px;
+  }
+  .currencies > div > div:first-child input {
+    width: 211px;
+  }
+  .currencies input {
+    width: 210px;
+  }
+  .alt .withdrawal_requisites input {
+    width: 266px;
+  }
+  .alt.withdrawal.withdrawal__piastrix {
+    /* padding: 166px 80px; */
+    padding: 0;
+  }
+  .bonus_card:hover,
+  .bonus_card__active {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  .no_bonus,
+  .bonus_card {
+    width: 145px;
+    height: 180px;
+  }
+  .available_block__text {
+    padding-top: 10px;
+  }
+  .bonus_alert,
+  .amount,
+  .withdrawal_form input,
+  .alt.withdrawal .info_block,
+  .alt .withdrawal_requisites input,
+  .btn button {
+    /* max-width: 400px;
+    width: 400px; */
+    width: 100%;
+  }
+  .bonus_alert {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .inner_pane.inner_pane.inner_pane {
+    padding-left: 0;
+    /* width: 95%; */
+    height: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .alt.withdrawal .bonus_alert,
+  .alt.withdrawal .bonus_alert a {
+    font-size: 14px;
+  }
+  .inner_pane_container {
+    /* width: 527px; */
+    width: 100%;
+  }
+  .alt.card_deposit {
+    width: 338px;
+    /* padding-left: 14px; */
+  }
+  .description_block > div > div:last-child,
+  .kauri .amount,
+  .kauri .amount input,
+  .requisites div .currencies.currencies input {
+    /* width: 490px; */
+    width: 100%;
+  }
+  .currencies {
+    padding-top: 0;
+  }
+  .title_selectBonus {
+    margin: 12px 0;
+  }
+  .wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .wrapper.kauri_top {
+    height: 1360px;
+  }
+  .detail {
+    padding: 0;
+    /* width: 475px; */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .description_block.description_block_notBonus {
+    height: auto;
+    width: 490px;
+    box-sizing: border-box;
+  }
+  .bonus__button.button_top_notBonus {
+    top: 0;
+  }
+  .bonus__button_kauri {
+    /* top: -20px; */
+    top: 0;
+  }
+  .button_kauri_notBonus {
+    top: 60px;
+    top: 0;
+  }
+  .bonus__button_kauri.button_top {
+    top: 950px;
+  }
+  .bonus__button.bonus__button_telegram {
+    top: 1310px;
+  }
+  .description_block {
+    padding: 0;
+    height: auto;
+  }
+  .bonus__notice {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    text-align: left;
+    padding-bottom: 12px;
+  }
+  .payment_crypto {
+    margin-top: 30px;
+  }
+  .kauri.kauri_top {
+    padding: 54px 24px;
+  }
+  .description_block.description_block__kauri {
+    padding: 40px 24px;
+    margin-bottom: 95px;
+    width: 380px;
+    height: 285px;
+  }
+  .description_block.description_block_noBonus {
+    padding: 0 0 96px;
+    height: auto;
+    /* width: 490px; */
+    width: 100%;
+  }
+  .error {
+    padding: 40px;
+  }
+  .error_header .error_title {
+    font-size: 17px;
+  }
+  .error .error_text {
+    font-size: 16px;
+    width: 241px;
+  }
+  .error .error_btn {
+    width: 241px;
+    height: 38px;
+  }
+  .bonus__timer {
+    flex-direction: column;
+  }
+  .alt.withdrawal.withdrawal__piastrix {
+    padding: 0 20px 40px;
+  }
+  .alt .withdrawal_requisites {
+    min-width: 100%;
+  }
+  .alt.withdrawal .info_block__mobile {
+    position: relative;
+    top: -249px;
+    width: 315px;
+  }
+  .alt.withdrawal .info_block__piastrix {
+    top: -116px;
+  }
+  .requisites > * {
+    margin-top: 0;
+  }
+  .requisites_margin {
+    margin-top: 16px;
+  }
+  .alt button {
+    margin-top: 0;
+  }
+  .alt.withdrawal {
+    padding: 0;
+  }
+  .withdrawal {
+    padding-left: 9px;
+  }
+  .alt.withdrawal .info_block {
+    /* width: 315px; */
+    width: 100%;
+  }
+  .withdrawal_cripto {
+    padding-bottom: 0;
+  }
+  .alt.withdrawal .info_block__card {
+    margin-bottom: 40px;
+  }
+  .error .btn_container button,
+  .error .btn_container button > div {
+    width: 241px;
+  }
+  .currencies > div > div:first-child input {
+    width: 210px;
+    height: 13px;
+  }
+  .bonus_card__kauri {
+    margin-top: 150px;
+  }
+  .cards_wraper,
+  .pagination,
+  .description_block > div > div:last-child,
+  .bonus__button {
+    /* width: 490px; */
+    width: 100%;
+  }
+  .cards_wraper {
+    justify-content: center;
+    /* gap: 60px; */
+    gap: 20px;
+  }
+  .no_bonus,
+  .bonus_card {
+    width: 99px;
+    height: 124px;
+  }
+  .detail_blok__bonus {
+    width: 338px;
+  }
+  .wrapper.wrapper_withdrawal__kauri,
+.wrapper.wrapper_dep {
+  /* height: 700px; */
+  height: 100%;
+  width: 98%;
+  /* padding-left: 24px; */
+  padding-left: 14px;
+}
+}
+@media (max-width: 768px) {
+  .wrapper,
+  .detail,
+  .requisites_margin,
+  .requisites .inputs input,
+  .amount,
+  .cards_wraper,
+  .pagination,
+  .description_block.description_block_notBonus,
+  .detail_blok__bonus,
+  .description_block {
+    /* max-width: 298px;
+    width: 298px; */
+    /* max-width: 298px; */
+    width: 100%;
+    max-width: 100%;
+
+  }
+.wrapper.wrapper_withdrawal__kauri,
+.wrapper.wrapper_dep {
+  /* height: 700px; */
+  height: 100%;
+  width: 100%;
+  padding-left: 0;
+}
+  /* .detail_blok__bonus {
+    max-width: 298px;
+    width: 298px;
+  } */
+  .currencies,
+  .inner_pane_container,
+  .kauri .amount,
+  .kauri .amount input,
+  .requisites div .currencies.currencies input,
+  .requisites > * {
+    /* width: 298px; */
+    width: 100%;
+  }
+  .inner_pane_container {
+    /* width: 300px; */
+    width: 100%;
+  }
+  .detail_blok__bonus .alt {
+    width: 100%;
+    /* height: 250px; */
+  }
+  .cards_wraper {
+    height: 152px;
+    /* width: 490px; */
+    width: 100%;
+    gap: 20px;
+  }
+  .detail {
+    padding-left: 0;
+    align-items: center;
+  }
+  .no_bonus,
+  .bonus_card {
+    width: 99px;
+    height: 124px;
+  }
+  .detail_blok__bonus {
+    padding-left: 0;
+  }
+  .description_block > div {
+    box-sizing: border-box;
+    /* padding: 0 10px; */
+    padding: 0;
+    /* width: 290px; */
+    width: 100%;
+  }
+  .bonus__button {
+    /* width: 270px; */
+    width: 100%;
+  }
+  .description_block > div > div:last-child {
+    /* width: 320px; */
+    width: 100%;
+  }
+  .description_block > div > div:last-child span {
+    white-space: pre-wrap;
+  }
+  .withdrawal {
+    margin-top: 0;
+    width: 100%;
+    padding: 0;
+  }
+  .requisites .inputs input, .requisites > * {
+    /* margin: 8px auto 0; */
+    /* width: 298px;
+    min-width: 298px; */
+    width: 100%;
+  }
+  .alt .withdrawal_requisites {
+    /* min-width: 298px;
+    width: 298px; */
+    width: 100%;
+  }
+  .bonus_alert,
+  .amount,
+  .withdrawal_form input,
+  .alt.withdrawal .info_block,
+  .alt .withdrawal_requisites input,
+  .btn button {
+    /* max-width: 298px;
+    width: 298px; */
+    width: 100%;
+  }
+  .inner_pane.inner_pane.inner_pane {
+  /* padding: 0; */
+  margin-top: 0;
+  padding-left: 0;
+}
+.alt.withdrawal .info_block__mobile {
+    position: relative;
+    top: -79px;
+    /* left: -18px; */
+    left: 0;
+    /* width: 315px; */
+    width: 100%;
+  }
+  .alt.withdrawal.withdrawal__piastrix {
+    padding: 0 20px 40px;
+    padding-bottom: 0;
+    padding: 0  ;
+    height: 333px;
+  }
+  
+}
+
+@keyframes close {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(45deg);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+  75% {
+    transform: rotateZ(135deg);
+  }
+  100% {
+    transform: rotateZ(180deg);
+  }
+}

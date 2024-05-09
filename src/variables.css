@@ -1,0 +1,173 @@
+:root {
+  --background-modal: #121120;
+  --border-modal: #262536;
+  --background-input: #19182a;
+  --text-color: #484658;
+  --text-color-login: #615f77;
+  --text-color-link: #ebff00;
+  --background-switch: #0b0a16;
+  --background-scroll: #615f7740;
+  --border-input: #514f63;
+  --filter-shadow-focuse-visible: drop-shadow(0px 0px 12px #fa00ff33)
+    drop-shadow(-1px 1px 0px #fa00ff);
+  --button-switch-active: #e000e0;
+  --link-color: #fa00ff; /* left menu hover svg, link */
+  --button-wallet: #c800cc;
+  --background-violet-button: #4c0d58;
+  --background-violet-button-active: #a000a3;
+  --background-violet-button-active_bg: #2e0835;
+  --link-color-2: #c78d44;
+  --border_input: #27263a;
+  --plus_win_line: #33c830;
+  --win_line_bg_right: linear-gradient(-90deg, #0b0a16 0%, #0b0a1600 100%);
+  --win_line_bg_left: linear-gradient(90deg, #0b0a16 0%, #0b0a1600 100%);
+  --background-play-game: #ffffff40;
+  --background-play-game_hover: #3d3d3d40;
+  --link-color-3: #c68c43; /* left menu active svg, link */
+  --link-color-4: #ffffff; /* left menu svg */
+  --font-brown: #2d1700;
+  --grey-color-1: #23212b; /*input bg*/
+  --grey-color-2: #414a65; /* low priority text */
+  --grey-color-3: #a9a9a9; /* low priority text */
+  --grey-color-4: #858585;
+  --grey-color-5: #838383;
+  --grey-color-6: #585858;
+  --grey-color-7: #383838;
+  --error-color: #812c2c;
+  --error-color-2: #ff2e18;
+  --danger-color: #ED1212;
+  --danger-color-2: #ED1212;
+  --danger-wraper-color-2: hsla(0, 87%, 56%, 0.12);
+  --success-color: #25B40D;
+  --success-color-2: #25B40D;
+  --success-success-color-2: #2ace111f;
+  --warning-color: #F0972E;
+  --warring-wraper-color: rgba(240, 151, 46, 0.12);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --dark-blue: #0d101c;
+  --background-color-1: #0f131f;
+  --background-color-2: #39373f;
+  --background-color-3: #151b2f;
+  --background-color-4: #141414;
+  --background-color-5: #141a2b;
+  --background-color-6: #090c1a;
+  --background-color-7: #6e85cf33;
+  --background-color-7_5: rgba(110, 133, 207, 0.2);
+  --background-color-8: #121320b3;
+  --background-color-9: #292929;
+  --background-color-10: #0c0e19;
+  --background-color-11: #060913;
+  --background-color-12: linear-gradient(
+    90deg,
+    #19365e 0,
+    #0a1126 10%,
+    #0a1126 90%,
+    #19365e 100%
+  ); /* footer slider bg */
+  --background-color-13: #050915; /* footer */
+  --background-color-14: #0a1026; /* footer icon bg */
+  --background-color-15: linear-gradient(#ffffff, #cea85d); /* checkbox bg */
+  --background-color-16: linear-gradient(
+    285.08deg,
+    #c68c43 -4.67%,
+    #8c4e00 -4.65%,
+    #ffc782 47.81%,
+    #aa722c 101.39%
+  ); /* checkbox bg checked */
+  --background-color-17: #050505;
+  --background-color-18: #111220;
+  --background-color-19: #161e39;
+  --background-color-20: #06070f66;
+  --background-color-21: #030405;
+  --background-color-22: #11121e;
+  --background-color-23: #222222;
+  --background-color-24: #0e101d;
+  --background-color-25: #121727;
+  --background-color-26: #121320cc;
+  --background-color-27: #121320;
+  --border-color-1: #6e85cf;
+  --border-color-2: #515151;
+  --border-color-3: #34395a;
+  --border-color-4: #212136;
+  --border-color-5: #0000008c;
+  --border-color-6: #6e85cf33;
+  --box-shadow-1: inset 0px 7px 8px rgba(0, 0, 0, 0.302);
+  --box-shadow-2: 0 7px 16px 0 rgba(0, 0, 0, 0.749);
+
+  --input-color: #565a75;
+  --innactive-color: #878990;
+  --white-text-color: #ffffff;
+  --blue-text-color: #6e7596;
+  --red: #ed1212;
+  --brown: #4b2700;
+
+  --black-color: #000000;
+
+  /* Золотая кнопка (регистрации/вход в header) */
+  /* Золотая кнопка button (бонус, профиль, вход/регистрация модальное окно, кошелек, транзакции, трансфер) */
+  --button-gold-bg: linear-gradient(
+    285.08deg,
+    #c68c43 -4.67%,
+    #c68c43 42.84%,
+    #c68c43 101.39%
+  );
+  --button-gold-box-shadow: inset 1px 1px 2px #edbb7c,
+    inset 0px -2px 2px #c49458;
+  --button-gold-text: #0d0e19;
+  --button-gold-after: #c68c43;
+
+  /* Красная кнопка (регистрации/вход, банер, мобайл банер) */
+  /* Красная кнопка button (вход/регистрация модальное окно) */
+  --button-red-bg-after: #c30901;
+  --button-red-bg: linear-gradient(
+    285.08deg,
+    #c64343 -4.67%,
+    #ca0000 -4.65%,
+    #991000 50.02%,
+    #d11000 101.39%
+  );
+  --button-red-box-shadow: inset 1px 1px 2px #f54127,
+    inset 0px -1px 2px rgba(245, 65, 39, 0.5);
+  --button-red-bg-hover: linear-gradient(
+    285.08deg,
+    #c64343 -4.67%,
+    #c70000 -4.65%,
+    #e82e18 50.02%,
+    #ca0f00 101.39%
+  );
+  --button-red-bg-box-shadow: inset 1px 1px 2px #f54127,
+    inset 0 -1px 2px rgba(245, 65, 39, 0.5);
+
+  --button-border-radius: 61px;
+
+  /* Золотая кнопка (header пополнить баланс, поиск игр кнопка названия провайдера в select) */
+  --button2-gold-bg: linear-gradient(
+    325.19deg,
+    #c68c43 -2.57%,
+    #8c4e00 -2.56%,
+    #ffc782 46.66%,
+    #aa722c 96.94%
+  );
+  --button2-gold-box-shadow: inset 1px 1px 2px #f0c585,
+    inset 0px -1px 2px rgba(240, 197, 133, 0.5); /* box-shadow checkbox:before checked */
+  --button2-gold-bg-hover: linear-gradient(
+    285.08deg,
+    #c68c43 -4.67%,
+    #8c4e00 -4.65%,
+    #ffdeb4 47.81%,
+    #aa722c 101.39%
+  );
+  --button2-gold-bg-hover-box-shadow: inset 1px 1px 2px #f0c585,
+    inset 0 -1px 2px rgba(240, 197, 133, 0.5); /* box-shadow checkbox checked */
+  --button-gold-bg-hover-bg: #cda061;
+
+  --button-goold-border-radius: 0 40px 40px 0;
+
+  --tablet-max-width: 1280px;
+  --mobile-max-width: 767px;
+}
+:global(.text) {
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+}

@@ -1,0 +1,16 @@
+.slider-wrapper {
+    position: relative;
+}
+.slider-wrapper::after,
+.slider-wrapper::before {
+    position: absolute;
+    content: "";
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+}
+.slider-wrapper::after {
+    background: linear-gradient(270deg, #131422 0%, rgba(19, 20, 35, 0) 100%);
+    right: 0;
+}

@@ -1,0 +1,372 @@
+.wraper {
+  padding: 0 5px;
+  padding-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  background-color: #121320;
+  border: 1px solid #262536;
+  border-top: none;
+  /* clip-path: polygon(0% 0%, 98% 0%, 100% 0%, 100% 97%, 98% 100%, 2% 100%, 0% 97%, 0% 0%); */
+}
+.corner_shape_left {
+  border-right: 2px solid #262536;
+  height: 20px;
+  width: 18px;
+  position: absolute;
+  bottom: -2px;
+  left: -9px;
+  background: #0b0a16;
+  transform: skew(43deg);
+}
+.corner_shape_right {
+  border-left: 2px solid #262536;
+  height: 20px;
+  width: 18px;
+  position: absolute;
+  bottom: -2px;
+  right: -10px;
+  background: #0b0a16;
+  transform: skew(-43deg);
+}
+/* .wraper::before {
+  padding-top: 2px;
+  content: "";
+  position: absolute;
+  height: 99.8%;
+  width: 99.8%;
+  background-color: #121320;
+} */
+.wraper_container {
+ display: flex;
+ z-index: 99;
+ width: 100%;
+ padding: 24px;
+ flex-direction: column;
+}
+.key_change_pwd_img_mobile, .twoda_img_mobile, .self_restraint_img_mobile {
+  display: none;
+}
+.new_pwd_inputs {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.self_restraint {
+  border-right: none;
+  border-radius: 0 0 20px 0;
+}
+.bottom_line_security {
+  width: 100%;
+  padding-top: 24px;
+}
+.qr_code_svg {
+  display: flex;
+  background-color: #19182A;
+  padding: 12px;
+  border-radius: 1px;
+}
+.qr_code_svg svg {
+  width: 130px;
+  height: 130px;
+}
+/* .change,
+.twofa,
+.twofa_connect,
+.qrcode_generation__block,
+.twofa_qrblock,
+.towfa_done,
+.self_restraint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  opacity: 1;
+} */
+.qrcode_generation__block p {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.qrcode_generation__code {
+  padding-bottom: 16px;
+  color: #FA00FF !important;
+  min-width: 300px;
+}
+.qrcode_generation {
+  display: flex;
+  gap: 12px;
+}
+.qr_code_input_copy {
+  position: relative;
+}
+.copy_btn {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.copy_btn:hover {
+  display: none;
+  opacity: 1;
+}
+.change {
+  width: 100%;
+}
+.change_container {
+  /* z-index: 99; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+h2 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.change_pwd_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: end;
+
+  width: 100%;
+
+}
+/* .change_pwd_container img {
+  width: 158px;
+  height: 158px;
+} */
+.key_change_pwd_img, .twoda_img, .self_restraint_img {
+  width: 158px;
+  height: 158px;
+}
+
+.new_pwd_inputs p {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+}
+.new_pwd_inputs .input {
+  width: 285px;
+}
+.submit_btn_change, .submit_btn_2fa, .submit_btn_restraint{
+  width: 148px;
+}
+.container_2fa_security {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.container_2fa_img_title {
+  display: flex;
+  gap: 20px;
+}
+.twofa_connect p:first-child {
+  color: white;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+}
+.twofa_connect:nth-child(2) {
+  color: var(--text-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+}
+.self_restraint {
+  /* padding-bottom: 24px; */
+  padding-bottom: 0;
+}
+.self_restraint_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.self_restraint_container_img_title {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+.self_restraint__select {
+  width: 256px;
+}
+.select_title_container_restraint {
+  margin-top: -9px;
+}
+.select_title_container_restraint p:first-child {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.select_title_container_restraint p:nth-child(3) {
+  color: var(--text-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.ricib {
+  margin-bottom: 10px;
+}
+.modal_title_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal_title_container span {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.body_device {
+  color: var(--text-color-link);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.body_text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  max-width: 363px;
+}
+.timer {
+  color: var(--Icon, #615F77);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.btn_container {
+  display: flex;
+  gap: 20px;
+}
+.modal_btn_confirm, .modal_btn_cancel {
+  width: 148px;
+  height: 42px;
+  font-size: 14px;
+  font-family: Montserrat;
+}
+.twofa_connect__text {
+  line-height: 144%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #484658;
+
+}
+@media (max-width: 960px) {
+  .qrcode_generation {
+    flex-direction: column;
+    width: 100%;
+  }
+  .container_2fa_img_title {
+    display: block;
+    width: 100%;
+  }
+  .twofa_qrblock {
+    width: 100%;
+  }
+  .qr_code_svg {
+    width: 132px;
+  }
+  .container_2fa_security {
+    align-items: flex-start;
+  }
+  .wraper {
+    /* width: 349px; */
+    width: 339px;
+  }
+  .corner_shape_right , .corner_shape_left {
+    bottom: -1px;
+  }
+  .change_container,.self_restraint_container,.container_2fa_security {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .key_change_pwd_img, .twoda_img, .self_restraint_img {
+    display: none;
+  }
+  .key_change_pwd_img_mobile, .twoda_img_mobile, .self_restraint_img_mobile {
+    display: block;
+    width: 48px;
+  }
+  .container_for_mobile {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .submit_btn_change, .submit_btn_2fa, .submit_btn_restraint{
+    width: 100%;
+  }
+  .wraper_container {
+    padding: 24px 12px;
+  }
+  .new_pwd_inputs .input {
+    width: 100%;
+  }
+  .submit_btn_change, .submit_btn_2fa, .submit_btn_restraint{
+    width: 100%;
+  }
+  .modal_btn_confirm {
+    width: 100%;
+  }
+  .modal_btn_cancel {
+    display: none;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  .select_title_container_restraint {
+    margin-top: 0;
+  }
+  .select_title_container_restraint p:first-child {
+    font-size: 12px;
+  }
+  .select_title_container_restraint p:nth-child(3) {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .twofa_connect p:first-child {
+    font-size: 14px;
+  }
+  .twofa_connect:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .new_pwd_inputs p {
+    font-size: 12px;
+  }
+  .self_restraint__select {
+    width: 100%;
+  }
+  .twofa {
+    margin: 24px 0;
+  }
+}

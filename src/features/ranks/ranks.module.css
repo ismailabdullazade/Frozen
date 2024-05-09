@@ -1,0 +1,729 @@
+.ranks__title_container {
+    text-align: center;
+    margin: 50px 0 32px;
+}
+.ranks-block {
+
+}
+.ranks_block__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.ranks_block__name_vip {
+    color: var(--background-modal);
+    background: var(--text-color-link);
+    font-size: 16px;
+    padding: 8px 14px;
+    display: inline-block;
+    margin-left: 20px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    opacity: 0.16;
+}
+.ranks_block__name_vip_active {
+    opacity: 1;
+}
+.ranks_block__cond {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.ranks_block__cond span {
+    color: var(--text-color-login);
+}
+.ranks_background {
+    background-position: bottom;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+.ranks_wraper {
+    box-sizing: border-box;
+    padding: 0;
+}
+.ranks_wraper__container {
+    display: flex;
+    width: 1180px;
+    height: 564px;
+    margin: 0 auto;
+    position: relative;
+}
+.specification_block__wraper,
+.specification_block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.specification_block__wraper {
+    justify-content: space-between;
+}
+.block_description {
+    display: flex;
+    justify-content: space-between;
+}
+.cards_specification {
+    background: #000613;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+}
+.cards_specification__card {
+    width: 100px;
+    height: 100%;
+    padding-right: 2rem;
+}
+.ranks_cards {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
+    padding: 0;
+}
+.cards_carusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.specification_title {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 23px;
+}
+.specification_title__name {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.specification_block span {
+    font-weight: 400;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.specification_block span:last-child {
+    padding-bottom: 0;
+}
+.progress_now,
+.progress_next {
+    display: flex;
+    flex-direction: column;
+}
+.block_img {
+    width: 75px;
+    height: 100%;
+    margin: 20px 20px 0 0;
+}
+.progress_now__title,
+.info_title,
+.persent_text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+.persent_text {
+    margin-left: 11px;
+}
+.info_title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.ranks_progress__cards,
+.progress_now__block {
+    display: flex;
+    align-items: center;
+}
+.block_info {
+    display: flex;
+    flex-direction: column;
+}
+.ranks_progress {
+    box-sizing: border-box;
+    width: calc(100% - 666px);
+    padding-right: 64px;
+}
+.info_percent {
+    display: flex;
+    align-items: center;
+}
+.progress_line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+.progress_line__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.progrss_baner {
+    display: flex;
+    background: #000613;
+    border-radius: 5px;
+    padding: 15px;
+    width: 375px;
+}
+.baner_img {
+    width: 139px;
+    height: 100%;
+}
+.baner_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 11px;
+}
+.baner_text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.baner_bonus {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--link-color);
+}
+.progress_line__container {
+    position: relative;
+    width: 529px;
+    margin: 17px 0;
+}
+.deposit__line__wrapper {
+    position: relative;
+    z-index: 3;
+}
+.deposit_line {
+    background: #0B0D18;
+    border: 1px solid var(--border-color-1);
+    box-shadow: inset 5px 5px 2px 2px #000000;
+    border-radius: 8px;
+    height: 39px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+.deposit_line__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.deposit_line__active {
+    position: absolute;
+    top: 2px;
+    min-width: 9px;
+    max-width: calc(100% - 4px);
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 5px;
+    z-index: 5;
+    transition: .2s ease-in width;
+    background: linear-gradient(90deg, #ff2020 0%, #ffd312 100%);
+}
+.deposit_line__active::after {
+    content: "";
+    display: block;
+    height: 100%;
+    background-image: url("../../images/bonuses/hatched-light.png");
+}
+.deposit_line__activeLight {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 12.78px;
+    height: 36.92px;
+    background: #FEC202;
+    filter: blur(15px);
+    border-radius: 10px;
+    transition: .2s ease-in left;
+}
+.progress_line__container .deposit__line__wrapper .deposit_line__progressLabels {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: -9px;
+    left: 12px;
+    right: 12px;
+    bottom: -9px;
+    width: calc(100% - 24px);
+}
+.deposit_line__progressLabelsPoint {
+    width: 1px;
+    height: calc(100% - 10px);
+    background-color: var(--border-color-1);
+    z-index: 0;
+}
+.deposit_line__progressCaption {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0 0 4px;
+    position: relative;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 520px;
+    margin-left: 10px;
+}
+.carusel_slider {
+    position: relative;
+    width: 84%;
+    height: 400px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.ranks_cards {
+    width: 666px;
+    /*width: 50%;*/
+    box-sizing: border-box;
+}
+.carusel_slider__img {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    z-index: 3;
+    transition: all 0.7s ease-in-out;
+}
+.carusel_slider__imgPrev,
+.carusel_slider__imgNext {
+    filter: brightness(0.7);
+    
+}
+.carusel_slider__imgPrev {
+    transform: scale(0.93) translateX(-13%);
+}
+.carusel_slider__imgNext {
+    transform: scale(0.93) translateX(12%);
+    z-index: 2;
+}
+.carusel_slider__imgFirst,
+.carusel_slider__imgLast {
+    z-index: 1;
+    filter: brightness(0.4);
+    opacity: .6;
+}
+.carusel_slider__imgLast {
+    transform: scale(0.86) translateX(26%);
+}
+.carusel_slider__imgFirst {
+    transform: scale(0.86) translateX(-26%);
+}
+.cards_carusel__arrowPrev:hover,
+.cards_carusel__arrowNext:hover {
+    cursor: pointer;
+}
+.cards_carusel__arrowPrev:active,
+.cards_carusel__arrowNext:active {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.carusel_slider__rank {
+    top: 75px;
+    left: 197px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 107.8%;
+    letter-spacing: 3.5px;
+    color: var(--white-text-color);
+    text-transform: uppercase;
+}
+.carusel_slider__player {
+    font-family: 'Organetto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    margin-top: 28px;
+    text-transform: uppercase;
+    color: #C0D0FF;
+}
+.carusel_slider__cashback,
+.carusel_slider__deposit {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 107.8%;
+    text-align: center;
+    color: var(--white-text-color);
+}
+.carusel_slider__number,
+.carusel_slider__description {
+    color: #7D7D7D;
+}
+/*.slider {*/
+/*    position: relative;*/
+/*}*/
+/*.slider img {*/
+/*    height: 397px;*/
+/*}*/
+.slider_card {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+}
+.slider_card__block {
+    top: 0;
+    left: 65px;
+    margin-bottom: 190px;
+}
+.slider_card__blockBootom {
+    top: 190px;
+    left: 45px;
+}
+.slider_card__blockBootom,
+.slider_card__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.progress_img {
+    padding: 40px 45px 0;
+}
+
+.rank_name_title, .rank_block_info {
+    border-top: 1px solid rgba(106, 133, 207, 0.1);
+}
+.rank_block_info {
+    /*clip-path: polygon(98% 0, 100% 13%, 100% 90%, 97% 100%, 2% 100%, 0 88%, 0 0);*/
+    border: 1px solid #262536;
+    margin-bottom: 30px;
+}
+
+.rank_name_title {
+    border-top: none;
+}
+.rank_name_block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.rank_name, .rank_block_info_title {
+    color: var(--white-text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+.rank_block_info_title {
+    margin-bottom: 16px;
+    padding: 8px 24px;
+}
+.siber .rank_block_info_title {background: linear-gradient(90deg, #03B3BA 0%, #17F3FC 100%);}
+.blade .rank_block_info_title {background: linear-gradient(90deg, #FF2055 0%, #FF4773 100%);}
+.viper .rank_block_info_title {background: linear-gradient(90deg, #F000D5 0%, #FF5CED 100%);}
+.hacker .rank_block_info_title {background: linear-gradient(90deg, #C11048 0%, #F15587 100%);}
+.rocketman .rank_block_info_title {background: linear-gradient(90deg, #F40093 0%, #FF5CBE 100%);}
+
+.rank_name_vip_club {
+    width: 82px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #FFC57C;
+    background: var(--button-gold-bg);
+    color: #3A2100;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 0.2;
+}
+.rank_name_vip_club.rank_name_vip_club_show {
+    opacity: 1;
+}
+.rank_name_description {
+    color: #4B516D;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.rank_block_items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 24px;
+}
+.rank_block_item {
+    box-sizing: border-box;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+.rank_block_item:nth-last-child(1),
+.rank_block_item:nth-last-child(2) {
+    margin-bottom: 16px;
+}
+/*.rank_block_item_big {*/
+/*    width: 40%;*/
+/*}*/
+.rank_block_item_name {
+    color: #484658;
+    /*opacity: 0.8;*/
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 6px;
+}
+.rank_block_item_val {
+    opacity: 0.8;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+
+
+/*@media (max-width: 1905px) {*/
+/*    .ranks_background__title::before {*/
+/*        right: -50px;*/
+/*    }*/
+/*    .ranks_wraper::after {*/
+/*        left: -350px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 1705px) {*/
+/*    .ranks_background__title::before {*/
+/*        right: 0;*/
+/*    }*/
+/*    .ranks_wraper::after {*/
+/*        left: -250px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 1675px) {*/
+/*    .ranks_cards {*/
+/*        padding: 40px 60px 70px;*/
+/*    }*/
+/*}*/
+/*@media (max-width: 1540px) {*/
+/*    .ranks_cards {*/
+/*        padding: 40px 45px 70px;*/
+/*    }*/
+/*}*/
+@media (max-width: 1439px) {
+    /*.ranks_background {*/
+    /*    margin-right: 40px;*/
+    /*}*/
+    /*.ranks_cards {*/
+    /*    padding: 40px 40px 70px;*/
+    /*}*/
+    /*.ranks_progress {*/
+    /*    padding: 50px 40px;*/
+    /*}*/
+    .ranks_background {
+        width: 920px;
+        margin: 0 auto;
+    }
+    .ranks_wraper__container,
+    .ranks_wraper {
+        display: flex;
+        justify-content: space-between;
+        width: 920px;
+    }
+    .ranks_progress {
+        width: 450px;
+        padding-right: 0;
+    }
+    .ranks_cards {
+        width: 446px;
+        margin: 0;
+    }
+}
+@media (max-width: 1280px) {
+    .ranks_wraper {width: 100%;}
+    .rank_name_title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .rank_name_block {
+        width: 100%;
+        justify-content: center;
+    }
+    .ranks_cards {
+        width: 75%;
+        padding: 100px 40px 20px;
+    }
+    .ranks_background {
+        margin-right: 0;
+    }
+    .ranks_wraper__container {
+        flex-direction: column-reverse;
+    }
+    .carusel_slider__img {
+        height: 310px;
+    }
+    .slider img {
+        height: 307px;
+    }
+    .ranks_progress {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid var(--border-color-6);
+    }
+    .ranks_wraper__container,
+    .ranks_wraper { 
+        width: 100%;
+        height: auto;
+    }
+    .ranks_background__title::before {
+        right: 100px;
+        top: 1000px;
+    }
+    .ranks_background::after {
+        top: 20px;
+        left: -200px;
+        width: 222px;
+        height: 212px;
+    }
+    .ranks_wraper::before {
+        right: 50px;
+        top: 100px;
+        width: 183px;
+        height: 215px;
+    }
+    .ranks_background::before {
+        right: 400px;
+        top: 500px;
+        width: 324px;
+        height: 268px;
+    }
+}
+@media (max-width: 767px) {
+    .ranks_background::before,
+    .ranks_wraper::before,
+    .ranks_background::after,
+    .ranks_background__title::before,
+    .ranks_wraper::after {
+        content: "";
+    }
+    .ranks_wraper__container {
+        border: none;
+        position: relative;
+    }
+    .ranks_wraper__container::before {
+        content: "";
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(180deg, #0D101B 50%, rgba(13, 16, 27, 0) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    .ranks_wraper { 
+        margin-bottom: 0;
+    }
+    .ranks_cards {
+        padding: 88px 0 0;
+        width: 100%;
+        margin: 0;
+    }
+    .cards_specification {
+        padding-left: 40px;
+    }
+    .cards_specification {
+        margin: 0 15px;
+    }
+    .carusel_slider {
+        margin: 0;
+        top: -20px;
+        width: 100%;
+    }
+    .cards_carusel__arrowPrev,
+    .cards_carusel__arrowNext {
+        width: 30px;
+        height: 43px;
+        transform: scale(1.5);
+    }
+    .ranks_background__title {
+        font-size: 30px;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .rank_name_title {
+        padding: 30px 16px 22px;
+    }
+    .rank_block_info {
+        padding: 30px;
+    }
+    .rank_block_item {
+        width: 50%;
+    }
+    .rank_block_item:nth-last-of-type(1),
+    .rank_block_item:nth-last-of-type(2) {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 625px) {
+    .ranks_progress__cards {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .progress_img {
+        padding: 0px 0px 130px 0px;
+        transform: rotate(90deg);
+    }
+    .progress_line__container {
+        width: 350px;
+    }
+    .deposit_line__progressCaption {
+        width: 335px;
+    }
+}
+@media (max-width: 525px) {
+    .cards_specification {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards_specification__card {
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+}

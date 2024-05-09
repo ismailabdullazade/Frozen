@@ -1,0 +1,119 @@
+.modal {
+    box-sizing: border-box;
+    width: 100%;
+}
+.error {
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: auto;
+    overflow: hidden;
+    padding: 60px;
+    height: 287px;
+}
+.error_title {
+    font-size: 20px;
+    color: var(--link-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+.close_modal {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 999;
+}
+.close_modal:hover {
+    animation: .3s close;
+}
+.error .error_text {
+    flex: 1;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+    width: 450px;
+}
+
+.error .btn_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.error .btn_container button {
+    width: 159px;
+    height: 30px;
+}
+.error .btn_container button:first-child {
+    margin-right: 15px;
+}
+.error .error_btn {
+    margin-bottom: 40px;
+}
+.error.error .btn_container.btn_container button div::after {
+    width: 180px;
+    left: 0;
+}
+
+.gold {
+    color: var(--link-color);
+}
+.close_activeBonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.close_activeBonus .error_text {
+    margin: 262px 0 274px;
+}
+
+@media (max-width: 960px) {
+    .error {
+        padding: 40px;
+        height: 333px;
+    }
+    .error_title {
+        font-size: 17px;
+    }
+    .error .error_text {
+        font-size: 15px;
+        width: 241px;
+    }
+    .error .btn_container {
+        flex-direction: column;
+    }
+    .error .btn_container button:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .error .btn_container button {
+        width: 241px;
+        height: 38px;
+    }
+}
+@keyframes close {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(45deg);
+    }
+    50% {
+        transform: rotateZ(90deg);
+    }
+    75% {
+        transform: rotateZ(135deg);
+    }
+    100% {
+        transform: rotateZ(180deg);
+    }
+}

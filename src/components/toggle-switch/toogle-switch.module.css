@@ -1,0 +1,77 @@
+.toggleSwitch {
+  display: flex;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--background-switch);
+}
+.error {
+}
+.wrapperInner {
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  background: var(--background-switch);
+  width: 56px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.switcherContainer {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+  position: relative;
+  left: 2px;
+}
+.switcherContainer.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.switcherContainer.active {
+  left: 24px;
+}
+.switcher {
+  position: absolute;
+  border-radius: 2px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.switcher.active {
+  opacity: 1;
+}
+.switcher.default {
+  background: var(--text-color-login);
+  /*background-image: url("../../images/toggle-switch-dark-20x20.svg");*/
+}
+.switcher.checked {
+  background: var(--button-switch-active);
+  /*background-image: url("../../images/toggle-switch-gold-20x20.svg");*/
+}
+.toggleSwitch label {
+  line-height: normal;
+  color: var(--white-text-color);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 18px;
+}
+
+@media (max-width: 960px) {
+  .toggleSwitch label {
+    width: 290px;
+  }
+}

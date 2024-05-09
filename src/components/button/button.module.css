@@ -1,0 +1,322 @@
+/*
+    COMMON STYLES
+*/
+.button {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: normal;
+  border: none;
+  /*border-radius: 5px;*/
+  cursor: pointer;
+  background: transparent;
+  min-height: 42px;
+  min-width: 80px;
+  padding: 0;
+  overflow: hidden;
+}
+.button__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /*border-radius: 5px;*/
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 70%,
+    10px 65%,
+    10px 35%,
+    0 30%
+  );
+}
+/* .button.gold .button__background::after {
+  content: "";
+  width: 16px;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  background-image: url("../../images/button_gold_left_background.png");
+  position: absolute;
+} */
+/* .button.gold .button__background::before {
+  content: "";
+  width: 20px;
+  right: -10px;
+  top: 15px;
+  transform: rotate(50deg);
+  height: 100%;
+  background: #0d101b;
+  position: absolute;
+} */
+.button__children {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button:not(.small) .button__children {
+}
+.button.small .button__children {
+  padding: 6px 0 8px;
+}
+.button .button__hover {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  position: absolute;
+  background-color: transparent;
+  transition: 0.1s ease-in all;
+}
+.button:not(.loading):not(.disabled):hover .button__hover {
+}
+.button.disabled {
+  cursor: not-allowed;
+}
+.button.disabled .button__background {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.button.disabled .button__children,
+.button:active:not(.loading):not(.gold) .button__children {
+  color: rgba(255, 255, 255, 0.4);
+}
+.button.disabled .button__background::after,
+.button:active .button__background::after {
+  content: none;
+  z-index: -1;
+}
+.button__loading {
+  background: url("../../images/items/hatched.png");
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  animation-name: loading;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 237px 0;
+  }
+}
+
+/*
+    GOLD STYLES
+*/
+.button.gold .button__background {
+  background: var(--text-color-link);
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 15px),
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 80%,
+    8px 70%,
+    8px 30%,
+    0 20%
+  );
+}
+.button.gold.disabled .button__background,
+.button.gold:active .button__background {
+  background: var(--text-color-link);
+  box-shadow: 0px 0px 12px 0px rgba(235, 255, 0, 0.35);
+  opacity: 0.5;
+}
+.button.gold.button.small .button__background {
+  background: var(--button2-gold-bg);
+  box-shadow: var(--button2-gold-box-shadow);
+}
+.button.gold:hover .button__background {
+  box-shadow: 0px 0px 12px 0px rgba(235, 255, 0, 0.35);
+  transition: 0.3s;
+}
+.button.gold:not(:active):not(.loading):not(.disabled):hover
+  .button__background::before {
+}
+.button.gold .button__children {
+  color: var(--background-switch);
+}
+.button.gold_revert {
+  min-height: 32px;
+}
+.button.gold_revert .button__background {
+  background: var(--text-color-link);
+  height: 35px;
+  clip-path: polygon(
+    0 0,
+
+    calc(100% - 14px) 0%,
+    100% calc(0% + 13px),
+    100% 100%,
+
+    0 100%,
+    0 80%,
+    8px 70%,
+    8px 30%,
+    0 20%
+  );
+}
+/* .button.gold .button__background::before {
+    background-image: url("../../images/items/button-bg.png");
+} */
+/*
+    BLUE STYLES
+*/
+.button.blue .button__background {
+  background: var(--text-color-link);
+}
+.button.blue .button__children {
+  color: #a4aed6;
+}
+.button.blue.disabled .button__background,
+.button.blue:active .button__background {
+  background: linear-gradient(
+    279deg,
+    #0b1226 -35.75%,
+    #202a45 34.6%,
+    #0a1124 106.44%
+  );
+}
+.button.blue.disabled .button__children,
+.button.blue:active .button__children {
+  color: rgba(164, 174, 214, 0.4);
+}
+.button.blue:hover:not(:active):not(.loading):not(.disabled)
+  .button__background::before {
+  width: 18%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 41%;
+  background: #a4aed6;
+  border-radius: 19px;
+  opacity: 1;
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  transform: scaleX(3);
+  z-index: -1;
+  transition: 0.1s;
+}
+
+/*
+    VIOLET STYLE
+*/
+.button.violet .button__background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+  clip-path: polygon(
+    calc(100% - 10px) 0,
+    100% 10px,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    10px 100%,
+    0 calc(100% - 10px),
+    0 10px,
+    10px 0
+  );
+  background: var(--background-violet-button);
+}
+.button.violet .button__hover {
+  background-color: var(--link-color);
+  transition: 0.3s;
+}
+.button.violet:hover .button__background {
+  background: var(--link-color);
+  transition: 0.3s;
+}
+.button.violet:hover .button__hover {
+  background: var(--background-violet-button);
+  transition: 0.3s;
+}
+.button.button.violet:active .button__hover,
+.button.button.violet.disabled .button__hover {
+  background-color: var(--background-violet-button-active);
+  transition: 0.3s;
+}
+.button.violet:active .button__background,
+.button.violet.disabled .button__background {
+  background-color: var(--background-violet-button-active_bg);
+}
+.button.violet .button__children {
+  color: #ffffff;
+}
+.button.violet .button__loading.button__children {
+  color: rgba(255, 255, 255, 0.4);
+}
+.button.violet:hover:not(:active):not(.loading):not(.disabled)
+  .button__background::before {
+  width: 18%;
+  top: 0px;
+  left: 41%;
+  background-color: #705ab8;
+  border-radius: 19px;
+  opacity: 1;
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+  transform: scaleX(3);
+}
+
+/*
+    DEMO STYLES
+*/
+.button.demo .button__background {
+  background: var(--background-play-game);
+  border-radius: 16px;
+  clip-path: none;
+}
+.button.demo .button__children {
+  color: var(--white-text-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+}
+.button.demo:hover .button__background {
+  background: var(--background-play-game_hover);
+  transition: 0.3s ease;
+}
+.button.demo.disabled .button__background,
+.button.demo:active .button__background {
+  background: linear-gradient(
+    279deg,
+    #0b1226 -35.75%,
+    #202a45 34.6%,
+    #0a1124 106.44%
+  );
+}
+.button.demo.disabled .button__children,
+.button.demo:active .button__children {
+  color: var(--white-text-color);
+}
+.button.demo:hover:not(:active):not(.loading):not(.disabled)
+  .button__background::before {
+  width: 18%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 41%;
+  background: #a4aed6;
+  border-radius: 19px;
+  opacity: 1;
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  transform: scaleX(3);
+  z-index: -1;
+  transition: 0.1s;
+}
